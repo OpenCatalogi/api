@@ -1,0 +1,469 @@
+openapi: 3.0.3
+info:
+  title: Public Code
+  version: '1.0'
+  description: >-
+    This API profides an rest implementation of the [publiccode
+    standard](https://yml.publiccode.tools/schema.core.html)
+  termsOfService: https://ec.europa.eu/info/european-union-public-licence_en
+  x-logo:
+    url: ''
+servers:
+  - url: https://api.example.io
+paths:
+  /publicode/{id}:
+    get:
+      tags:
+        - publiccode
+    put:
+      tags:
+        - publiccode
+    delete:
+      tags:
+        - publiccode
+    parameters:
+      - deprecated: false
+        name: id
+        description: The unique uuid of this publiccode object
+        in: path
+        required: true
+  /publiccode:
+    get:
+      tags:
+        - publiccode
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCode'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/PublicCode'
+          description: ''
+          headers: {}
+          links: {}
+    post:
+      tags:
+        - publiccode
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCode'
+              encoding: ''
+              example: ''
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/PublicCode'
+              encoding: ''
+              example: ''
+          description: ''
+          headers: {}
+          links: {}
+components:
+  schemas:
+    PublicCode:
+      description: >-
+        Based on [publiccode 0.3.0
+        standard](https://yml.publiccode.tools/schema.core.html#key-developmentstatus)
+        and expandend in line with the[ comonenten
+        catalogus.](https://componentencatalogus.commonground.nl/api/components/)
+      required:
+        - name
+      type: object
+      properties:
+      properties:
+        id:
+          title: id
+          description: The identifier for this object on this api
+          type: string
+          format: uuid
+          readOnly: true
+          maxLength: 1000
+          minLength: 1
+        name:
+          title: Name
+          description: This key contains the name of the software. It contains the (short) public name of the product, which can be localised in the specific localisation section. It should be the name most people usually refer to the software. In case the software has both an internal “code” name and a commercial name, use the commercial name.
+          type: string
+          example: Medusa
+          maxLength: 255
+          minLength: 1
+        applicationSuite:
+          title: Application Suite
+          description: This key contains the name of the “suite” to which the software belongs.
+          type: string
+          example: MegaProductivitySuite
+          maxLength: 255
+          minLength: 1
+        url:
+          title: Url
+          description: A unique identifier for this software. This string must be a URL to the source code repository (git, svn, …) in which the software is published. If the repository is available under multiple protocols, prefer HTTP/HTTPS URLs which don’t require user authentication. Forks created for the purpose of contributing upstream should not modify this file; this helps software parsing publiccode.yml to immediately skip technical forks. On the contrary, a complete fork that is meant to be maintained separately from the original software should modify this line, to give themselves the status of a different project. See Forks and variants for a complete description of what is a software variant and how to handle forked software as a parser or an author..
+          type: string
+          format: url
+          example: https://example.com/italia/medusa.git
+          maxLength: 255
+          minLength: 1
+        landingURL:
+          title: Url
+          description: A unique identifier for this software. This string must be a URL to the source code repository (git, svn, …) in which the software is published. If the repository is available under multiple protocols, prefer HTTP/HTTPS URLs which don’t require user authentication. Forks created for the purpose of contributing upstream should not modify this file; this helps software parsing publiccode.yml to immediately skip technical forks. On the contrary, a complete fork that is meant to be maintained separately from the original software should modify this line, to give themselves the status of a different project. See Forks and variants for a complete description of what is a software variant and how to handle forked software as a parser or an author..
+          type: string
+          format: url
+          example: https://example.com/italia/medusa.git
+          maxLength: 255
+          minLength: 1
+        softwareVersion:
+          title: Software version
+          description: This key contains the latest stable version number of the software. The version number is a string that is not meant to be interpreted and parsed but just displayed; parsers should not assume semantic versioning or any other specific version format. The key can be omitted if the software is currently in initial development and has never been released yet..
+          type: string
+          format: url
+          example: 1.0
+          maxLength: 255
+          minLength: 1
+        releaseDate:
+          title: Release date
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+          format: date
+          example: 2017-04-15
+          maxLength: 255
+          minLength: 1
+        platforms:
+          title: platforms
+          description: This key specifies which platform the software runs on. It is meant to describe the platforms that users will use to access and operate the software, rather than the platform the software itself runs on. Use the predefined values if possible. If the software runs on a platform for which a predefined value is not available, a different value can be used..
+          type: array
+          example: web
+          enum:
+            - web
+            - windows
+            - mac
+            - linux
+            - ios
+            - android
+            - kubernetes
+            - haven
+            - mendix
+        categories:
+          title: Categories
+          description: A list of words that can be used to describe the software and can help building catalogs of open software. The controlled vocabulary List of software categories contains the list of allowed values.
+          type: array
+          example: accounting
+          enum:
+            - accounting
+            - agile-project-management
+            - applicant-tracking
+            - application-development
+            - appointment-scheduling
+            - backup
+            - billing-and-invoicing
+            - blog
+            - budgeting
+            - business-intelligence
+            - business-process-management
+            - cad
+            - call-center-management
+            - cloud-management
+            - collaboration
+            - communications
+            - compliance-management
+            - contact-management
+            - content-management
+            - crm
+            - customer-service-and-support
+            - data-analytics
+            - data-collection
+            - data-visualization
+            - digital-asset-management
+            - digital-citizenship
+            - document-management
+            - donor-management
+            - e-commerce
+            - e-signature
+            - educational-content
+            - email-management
+            - email-marketing
+            - employee-management
+            - enterprise-project-management
+            - enterprise-social-networking
+            - erp
+            - event-management
+            - facility-management
+            - feedback-and-reviews-management
+            - financial-reporting
+            - fleet-management
+            - fundraising
+            - gamification
+            - geographic-information-systems
+            - grant-management
+            - graphic-design
+            - help-desk
+            - hr
+            - ide
+            - identity-management
+            - instant-messaging
+            - inventory-management
+            - it-asset-management
+            - it-development
+            - it-management
+            - it-security
+            - it-service-management
+            - knowledge-management
+            - learning-management-system
+            - marketing
+            - mind-mapping
+            - mobile-marketing
+            - mobile-payment
+            - network-management
+            - office
+            - online-booking
+            - online-community
+            - payment-gateway
+            - payroll
+            - predictive-analysis
+            - procurement
+            - productivity-suite
+            - project-collaboration
+            - project-management
+            - property-management
+            - real-estate-management
+            - remote-support
+            - resource-management
+            - sales-management
+            - seo
+            - service-desk
+            - social-media-management
+            - survey
+            - talent-management
+            - task-management
+            - taxes-management
+            - test-management
+            - time-management
+            - time-tracking
+            - translation
+            - video-conferencing
+            - video-editing
+            - visitor-management
+            - voip
+            - warehouse-management
+            - web-collaboration
+            - web-conferencing
+            - website-builder
+            - whistleblowing
+            - workflow-management
+        usedBy:
+          title: Used by
+          description: A list of the names of prominent public administrations (that will serve as “testimonials”) that are currently known to the software maintainer to be using this software. Parsers are encouraged to enhance this list also with other information that can obtain independently; for instance, a fork of a software, owned by an administration, could be used as a signal of usage of the software.
+          type: string
+          example: Italian Governement
+          maxLength: 255
+          minLength: 1
+        roadmap:
+          title: roadmap
+          description: A link to a public roadmap of the software.
+          type: string
+        developmentStatus:
+          title: Development Status
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+          enum:
+            - concept
+            - development
+            - beta
+            - stable
+            - obsolete
+        softwareType:
+          title: Development Status
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+          enum:
+            - standalone/mobile
+            - standalone/iot
+            - standalone/desktop
+            - standalone/web
+            - standalone/backend
+            - standalone/other
+            - addon
+            - library
+            - configurationFiles
+        layerType:
+          title: Layer Type
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+          example: interface
+          enum:
+            - interface
+            - service
+            - integration
+            - api
+            - data
+        description:
+          title: description
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+        legal:
+          title: legal
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+        maintenance:
+          title: maintenance
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string'
+        localisation:
+          title: localisation
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+        dependsOn:
+          title: dependsOn
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: array
+            items:
+              $ref: '#/components/schemas/dependency'
+        releaseDate:
+          title: Release date
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+          format: date
+          example: 2017-04-15
+          maxLength: 255
+          minLength: 1
+      externalDocs:
+        url: >-
+          https://yml.publiccode.tools/schema.core.html#top-level-keys-and-sections
+    Dependency:
+      type: object
+      properties:
+        name:
+          title: Name
+          description: The name of the dependency (e.g. MySQL, NFC Reader)
+          type: string
+          example: PostgreSQL
+          maxLength: 255
+          minLength: 1
+        versionMin :
+          title: versionMin
+          description: The first compatible version
+          type: string
+          example: 1.1
+          maxLength: 255
+          minLength: 1
+        versionMax :
+          title: versionMax
+          description: the latest compatible version
+          type: string
+          example: 1.3
+          maxLength: 255
+          minLength: 1
+        version :
+          title: version
+          description: The only major version for which the software is compatible. It assumes compatibility with all patches and bugfixes later applied to this version.
+          type: string
+          example: 1.1
+          maxLength: 255
+          minLength: 1
+        optional:
+          title: optional
+          description: Whether the dependency is optional or mandatory
+          type: boolean
+    Contact:
+      required:
+        - name
+      type: object
+      properties:
+        name:
+          title: Name
+          description: >-
+            The name of the contractor, whether it’s a company or a physical
+            person.
+          maxLength: 255
+          minLength: 1
+          type: string
+          example: VNG Realisatie
+        email:
+          format: email
+          title: email
+          description: >-
+            This key contains the e-mail address of the technical contact. It
+            must be an email address of where the technical contact can be
+            directly reached; do NOT populate this key with mailing-lists or
+            generic contact points like “info@acme.inc”. The e-mail address must
+            not be obfuscated. To improve resistance against e-mail collection,
+            use \x64 to replace @, as allowed by the YAML specification.
+          type: string
+          example: john.doe@vng.nl
+        phone:
+          title: phone
+          description: phone number (with international prefix). This has to be a string.
+          type: string
+          example: john.doe@vng.nl
+        affiliation:
+          title: affiliation
+          description: >-
+            This key contains an explicit affiliation information for the
+            technical contact. In case of multiple maintainers, this can be used
+            to create a relation between each technical contact and each
+            maintainer entity. It can contain for instance a company name, an
+            association name, etc.
+          type: string
+    Contractor:
+      required:
+        - name
+        - until
+      type: object
+      properties:
+        name:
+          title: Name
+          description: >-
+            The name of the contractor, whether it’s a company or a physical
+            person.
+          maxLength: 255
+          minLength: 1
+          type: string
+          example: VNG Realisatie
+        until:
+          title: until
+          description: >-
+            This is a date (YYYY-MM-DD). This key must contain the date at which
+            the maintenance is going to end. In case of community maintenance,
+            the value should not be more than 2 years in the future, and thus
+            will need to be regularly updated as the community continues working
+            on the project.
+          type: date
+        email:
+          format: email
+          title: email
+          description: >-
+            his key contains the e-mail address of the technical contact. It
+            must be an email address of where the technical contact can be
+            directly reached; do NOT populate this key with mailing-lists or
+            generic contact points like “info@acme.inc”. The e-mail address must
+            not be obfuscated. To improve resistance against e-mail collection,
+            use \x64 to replace @, as allowed by the YAML specification.
+          type: string
+          example: john.doe@vng.nl
+        website:
+          format: url
+          title: website
+          description: >-
+            The only major version for which the software is compatible. It
+            assumes compatibility with all patches and bugfixes later applied to
+            this version.
+          maxLength: 255
+          minLength: 1
+          type: string
+          example: https://vng.nl/
+  securitySchemes:
+    JWTAuth:
+      scheme: bearer
+      bearerFormat: JWT
+      type: http
+      description: |-
+        Example: 
+        > Authorization: Bearer <token>
+  headers: {}
+  responses: {}
+  parameters: {}
+security:
+  - JWTAuth: []
+tags:
+  - name: publiccode

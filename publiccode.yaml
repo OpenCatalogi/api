@@ -1,0 +1,48 @@
+publiccodeYmlVersion: "0.1"
+
+name: "Public Code"
+url: "https://yml.publiccode.tools/schema.core.html"
+releaseDate: "2022-04-08"
+
+softwareType: configurationFiles
+
+inputTypes:
+  - application/json
+  - application/xml
+
+outputTypes:
+  - application/json
+  - application/ld+json
+  - application/hal+json
+  - application/vnd.api+json
+  - application/health+json
+  - application/xml
+  - application/x-yaml
+  - text/csv
+  - text/html
+
+platforms:
+  - web
+  
+categories:
+  - collaboration
+  - it-development
+  
+developmentStatus: beta
+
+description:
+  nl:
+    shortDescription: "Een API om open source projecten te delen."
+    documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/klanten-api/master/src/openapi.yaml'
+    apiDocumentation: 'https://raw.githubusercontent.com/VNG-Realisatie/klanten-api/master/src/openapi.yaml'
+    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/klanten_publiccode/main/data/klanten.json'
+  en:
+    shortDescription: "An API to share open source projects"
+    documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/klanten-api/master/src/openapi.yaml'
+    apiDocumentation: 'https://raw.githubusercontent.com/VNG-Realisatie/klanten-api/master/src/openapi.yaml'
+    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/klanten_publiccode/main/data/klanten.json'
+
+dependsOn:
+  open:
+    - name: common-gateway
+      versionMin: 1.0.0
