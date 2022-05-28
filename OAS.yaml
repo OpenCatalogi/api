@@ -262,6 +262,7 @@ components:
           title: roadmap
           description: A link to a public roadmap of the software.
           type: string
+          format: url
         developmentStatus:
           title: Development Status
           description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
@@ -276,6 +277,7 @@ components:
           title: Development Status
           description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
           type: string
+          example: standalone/web
           enum:
             - standalone/mobile
             - standalone/iot
@@ -297,6 +299,14 @@ components:
             - integration
             - api
             - data
+        installationType:
+          title: Installation Type
+          description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
+          type: string
+          example: self
+          enum:
+            - self
+            - helm
         description:
           title: description
           description: This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.
