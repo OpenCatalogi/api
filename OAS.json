@@ -1,1 +1,1055 @@
-{"openapi":"3.0.3","info":{"title":"Public Code","version":"1.0","description":"This API profides an rest implementation of the [publiccode standard](https://yml.publiccode.tools/schema.core.html)","termsOfService":"https://ec.europa.eu/info/european-union-public-licence_en","x-logo":{"url":""}},"servers":[{"url":"https://api.example.io"}],"paths":{"/publicode/{id}":{"get":{"tags":["publiccode"]},"put":{"tags":["publiccode"]},"delete":{"tags":["publiccode"]},"parameters":[{"deprecated":false,"name":"id","description":"The unique uuid of this publiccode object","in":"path","required":true,"x-last-modified":1653761381661}],"x-last-modified":1653761389830},"/publiccode":{"get":{"tags":["publiccode"],"responses":{"200":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Public Code"}},"application/xml":{"schema":{"$ref":"#/components/schemas/Public Code"}}},"description":"","x-last-modified":1653761708467}}},"post":{"tags":["publiccode"],"responses":{"201":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Public Code"},"example":""},"application/xml":{"schema":{"$ref":"#/components/schemas/Public Code"},"example":""}},"description":"","x-last-modified":1653761748468}}},"x-last-modified":1653761402423}},"components":{"schemas":{"Public Code":{"description":"Based on [publiccode 0.3.0 standard](https://yml.publiccode.tools/schema.core.html#key-developmentstatus) and expandend in line with the[ comonenten catalogus.](https://componentencatalogus.commonground.nl/api/components/)","required":["name"],"type":"object","properties":{"id":{"format":"uuid","title":"id","description":"The identifier for this object on this api","maxLength":1000,"minLength":1,"type":"string","readOnly":true},"name":{"title":"Name","description":"This key contains the name of the software. It contains the (short) public name of the product, which can be localised in the specific localisation section. It should be the name most people usually refer to the software. In case the software has both an internal “code” name and a commercial name, use the commercial name.","maxLength":255,"minLength":1,"type":"string","example":"Medusa"},"description":{"title":"description","description":"This key contains the date at which the latest version was released. This date is mandatory if the software has been released at least once and thus the version number is present.","type":"string"}},"externalDocs":{"url":"https://yml.publiccode.tools/schema.core.html#top-level-keys-and-sections"},"x-last-modified":1653750045345},"Dependency":{"type":"object","x-last-modified":1653750150479},"Contact":{"required":["name"],"type":"object","properties":{"name":{"title":"Name","description":"The name of the contractor, whether it’s a company or a physical person.","maxLength":255,"minLength":1,"type":"string","example":"VNG Realisatie"},"email":{"format":"email","title":"email","description":"This key contains the e-mail address of the technical contact. It must be an email address of where the technical contact can be directly reached; do NOT populate this key with mailing-lists or generic contact points like “info@acme.inc”. The e-mail address must not be obfuscated. To improve resistance against e-mail collection, use \\x64 to replace @, as allowed by the YAML specification.","type":"string","example":"john.doe@vng.nl"},"phone":{"title":"phone","description":"phone number (with international prefix). This has to be a string.","type":"string","example":"john.doe@vng.nl"},"affiliation":{"title":"affiliation","description":"This key contains an explicit affiliation information for the technical contact. In case of multiple maintainers, this can be used to create a relation between each technical contact and each maintainer entity. It can contain for instance a company name, an association name, etc.","type":"string"}}},"Contractor":{"required":["name","until"],"type":"object","properties":{"name":{"title":"Name","description":"The name of the contractor, whether it’s a company or a physical person.","maxLength":255,"minLength":1,"type":"string","example":"VNG Realisatie"},"until":{"title":"until","description":"This is a date (YYYY-MM-DD). This key must contain the date at which the maintenance is going to end. In case of community maintenance, the value should not be more than 2 years in the future, and thus will need to be regularly updated as the community continues working on the project.","type":"date"},"email":{"format":"email","title":"email","description":"his key contains the e-mail address of the technical contact. It must be an email address of where the technical contact can be directly reached; do NOT populate this key with mailing-lists or generic contact points like “info@acme.inc”. The e-mail address must not be obfuscated. To improve resistance against e-mail collection, use \\x64 to replace @, as allowed by the YAML specification.","type":"string","example":"john.doe@vng.nl"},"website":{"format":"url","title":"website","description":"The only major version for which the software is compatible. It assumes compatibility with all patches and bugfixes later applied to this version.","maxLength":255,"minLength":1,"type":"string","example":"https://vng.nl/"}}}},"securitySchemes":{"JWTAuth":{"scheme":"bearer","bearerFormat":"JWT","type":"http","description":"Example: \n> Authorization: Bearer <token>","x-last-modified":1653761056881}},"headers":{},"responses":{},"parameters":{}},"security":[{"JWTAuth":[]}],"tags":[{"name":"publiccode","x-last-modified":1653761308295}]}
+openapi: 3.1.0
+x-stoplight:
+  id: x7yg9vhm1mt4z
+info:
+  title: Public Code
+  version: '1.0'
+  license:
+    name: EUPL
+  contact:
+    name: Ruben van der Linde
+    url: www.conduction.nl
+    email: ruben@conduction.nl
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '/users/{userId}':
+    parameters:
+      - schema:
+          type: integer
+        name: userId
+        in: path
+        required: true
+        description: Id of an existing user.
+    get:
+      summary: Get User Info by User ID
+      tags: []
+      responses:
+        '200':
+          description: User Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              examples:
+                Get User Alice Smith:
+                  value:
+                    id: 142
+                    firstName: Alice
+                    lastName: Smith
+                    email: alice.smith@gmail.com
+                    dateOfBirth: '1997-10-31'
+                    emailVerified: true
+                    signUpDate: '2019-08-24'
+        '404':
+          description: User Not Found
+      operationId: get-users-userId
+      description: Retrieve the information of the user with the matching user ID.
+    patch:
+      summary: Update User Information
+      operationId: patch-users-userId
+      responses:
+        '200':
+          description: User Updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              examples:
+                Updated User Rebecca Baker:
+                  value:
+                    id: 13
+                    firstName: Rebecca
+                    lastName: Baker
+                    email: rebecca@gmail.com
+                    dateOfBirth: '1985-10-02'
+                    emailVerified: false
+                    createDate: '2019-08-24'
+        '404':
+          description: User Not Found
+        '409':
+          description: Email Already Taken
+      description: Update the information of an existing user.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                email:
+                  type: string
+                  description: >-
+                    If a new email is given, the user's email verified property
+                    will be set to false.
+                dateOfBirth:
+                  type: string
+            examples:
+              Update First Name:
+                value:
+                  firstName: Rebecca
+              Update Email:
+                value:
+                  email: rebecca@gmail.com
+              Update Last Name & Date of Birth:
+                value:
+                  lastName: Baker
+                  dateOfBirth: '1985-10-02'
+        description: Patch user properties to update.
+  /user:
+    post:
+      summary: Create New User
+      operationId: post-user
+      responses:
+        '200':
+          description: User Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              examples:
+                New User Bob Fellow:
+                  value:
+                    id: 12
+                    firstName: Bob
+                    lastName: Fellow
+                    email: bob.fellow@gmail.com
+                    dateOfBirth: '1996-08-24'
+                    emailVerified: false
+                    createDate: '2020-11-18'
+        '400':
+          description: Missing Required Information
+        '409':
+          description: Email Already Taken
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                email:
+                  type: string
+                dateOfBirth:
+                  type: string
+                  format: date
+              required:
+                - firstName
+                - lastName
+                - email
+                - dateOfBirth
+            examples:
+              Create User Bob Fellow:
+                value:
+                  firstName: Bob
+                  lastName: Fellow
+                  email: bob.fellow@gmail.com
+                  dateOfBirth: '1996-08-24'
+        description: Post the necessary fields for the API to create a new user.
+      description: Create a new user.
+  /components:
+    post:
+      summary: Create component
+      tags:
+        - component
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Component'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Component'
+      operationId: post-components
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Component'
+    get:
+      summary: Search components
+      tags:
+        - component
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type:
+                      - string
+                      - array
+                    items:
+                      $ref: '#/components/schemas/Component'
+      operationId: get-components
+      description: ''
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: type
+          description: The type of components that you want returned
+  '/components/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    put:
+      summary: Update a component
+      tags:
+        - components
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Component'
+      operationId: put-components-id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Component'
+    get:
+      summary: Get a single component
+      tags:
+        - components
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Component'
+      operationId: get-components-id
+components:
+  schemas:
+    User:
+      title: User
+      type: object
+      description: ''
+      examples:
+        - id: 142
+          firstName: Alice
+          lastName: Smith
+          email: alice.smith@gmail.com
+          dateOfBirth: '1997-10-31'
+          emailVerified: true
+          signUpDate: '2019-08-24'
+      properties:
+        id:
+          type: integer
+          description: Unique identifier for the given user.
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+          format: email
+        dateOfBirth:
+          type: string
+          format: date
+          example: '1997-10-31'
+        emailVerified:
+          type: boolean
+          description: Set to true if the user's email has been verified.
+        createDate:
+          type: string
+          format: date
+          description: The date that the user was created.
+      required:
+        - id
+        - firstName
+        - lastName
+        - email
+        - emailVerified
+    Application:
+      title: Application
+      x-stoplight:
+        id: rxtjerlhpkxnm
+      type: object
+      description: ''
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+      required:
+        - name
+      x-tags:
+        - application
+    Component:
+      title: Component
+      x-stoplight:
+        id: 58v2ropv82qs8
+      type: object
+      description: >-
+        Based on the [top level
+        component](https://yml.publiccode.tools/schema.core.html#top-level-keys-and-sections)
+        of public code. represent a pease of software that may iether be 
+        sntandalone or part of a larger application
+      examples:
+        - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+          name: Medusa
+          applicationSuite:
+            id: string
+            name: string
+          url: 'https://example.com/italia/medusa.git'
+          landingURL: 'https://example.com/italia/medusa'
+          isBasedOn: 'https://github.com/italia/otello.git'
+          softwareVersion: '1.0'
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          description: >-
+            This key contains the name of the software. It contains the (short)
+            public name of the product, which can be localised in the specific
+            localisation section. It should be the name most people usually
+            refer to the software. In case the software has both an internal
+            “code” name and a commercial name, use the commercial name.
+          example: Medusa
+        applicationSuite:
+          $ref: '#/components/schemas/Application'
+        url:
+          type: string
+          format: url
+          example: 'https://example.com/italia/medusa.git'
+          description: >-
+            A unique identifier for this software. This string must be a URL to
+            the source code repository (git, svn, …) in which the software is
+            published. If the repository is available under multiple protocols,
+            prefer HTTP/HTTPS URLs which don’t require user authentication.
+
+
+            Forks created for the purpose of contributing upstream should not
+            modify this file; this helps software parsing publiccode.yml to
+            immediately skip technical forks. On the contrary, a complete fork
+            that is meant to be maintained separately from the original software
+            should modify this line, to give themselves the status of a
+            different project.
+
+
+            See Forks and variants for a complete description of what is a
+            software variant and how to handle forked software as a parser or an
+            author.
+        landingURL:
+          type: string
+          description: >-
+            If the url parameter does not serve a human readable or browsable
+            page, but only serves source code to a source control client, with
+            this key you have an option to specify a landing page. This page,
+            ideally, is where your users will land when they will click a button
+            labeled something like “Go to the application source code”. In case
+            the product provides an automated graphical installer, this URL can
+            point to a page which contains a reference to the source code but
+            also offers the download of such an installer.
+          format: url
+          example: 'https://example.com/italia/medusa'
+        isBasedOn:
+          type:
+            - string
+            - array
+          description: >-
+            In case this software is a variant or a fork of another software,
+            which might or might not contain a publiccode.yml file, this key
+            will contain the url of the original project(s).
+
+
+            The existence of this key identifies the fork as a software variant,
+            descending from the specified repositories.
+          example: 'https://github.com/italia/otello.git'
+          items: {}
+        softwareVersion:
+          type: string
+          example: '1.0'
+          description: >-
+            This key contains the latest stable version number of the software.
+            The version number is a string that is not meant to be interpreted
+            and parsed but just displayed; parsers should not assume semantic
+            versioning or any other specific version format.
+
+
+            The key can be omitted if the software is currently in initial
+            development and has never been released yet.
+        releaseDate:
+          type: string
+          description: >-
+            This key contains the date at which the latest version was released.
+            This date is mandatory if the software has been released at least
+            once and thus the version number is present.
+          format: date
+        logo:
+          type: string
+          description: >-
+            This key contains the path to the logo of the software. Logos should
+            be in vector format; raster formats are only allowed as a fallback.
+            In this case, they should be transparent PNGs, minimum 1000px of
+            width. The key value can be the relative path to the file starting
+            from the root of the repository, or it can be an absolute URL
+            pointing to the logo in raw version. In both cases, the file must
+            reside inside the same repository where the publiccode.yml file is
+            stored.
+          example: img/logo.svg
+        platforms:
+          type: string
+          description: >-
+            This key specifies which platform the software runs on. It is meant
+            to describe the platforms that users will use to access and operate
+            the software, rather than the platform the software itself runs on.
+
+
+            Use the predefined values if possible. If the software runs on a
+            platform for which a predefined value is not available, a different
+            value can be used.
+          example: web
+          enum:
+            - web
+            - windows
+            - mac
+            - linux
+            - ios
+            - android
+        categories:
+          type: array
+          description: >-
+            A list of words that can be used to describe the software and can
+            help building catalogs of open software.
+
+
+            The controlled vocabulary List of software categories contains the
+            list of allowed values.
+          items:
+            type: string
+            enum:
+              - accounting
+              - agile-project-management
+              - applicant-tracking
+              - application-development
+              - appointment-scheduling
+              - backup
+            example: accounting
+        usedBy:
+          description: >-
+            A list of the names of prominent public administrations (that will
+            serve as “testimonials”) that are currently known to the software
+            maintainer to be using this software.
+
+
+            Parsers are encouraged to enhance this list also with other
+            information that can obtain independently; for instance, a fork of a
+            software, owned by an administration, could be used as a signal of
+            usage of the software.
+          type: array
+          items:
+            type: string
+        roadmap:
+          type: string
+          description: A link to a public roadmap of the software.
+          format: url
+        developmentStatus:
+          type: string
+          description: >-
+            The keys are:
+
+
+
+            -  concept - The software is just a “concept”. No actual code may
+            have been produced, and the repository could simply be a
+            placeholder.
+
+            - development - Some effort has gone into the development of the
+            software, but the code is not ready for the end user, even in a
+            preliminary version (beta or alpha) to be tested by end users.
+
+            - beta - The software is in the testing phase (alpha or beta). At
+            this stage, the software might or might not have had a preliminary
+            public release.
+
+            - stable - The software has seen a first public release and is ready
+            to be used in a production environment.
+
+            - obsolete - The software is no longer maintained or kept up to
+            date. All of the source code is archived and kept for historical
+            reasons.
+          enum:
+            - concept
+            - development
+            - beta
+            - stable
+            - obsolete
+        softwareType:
+          type: string
+          description: >-
+            The keys are:
+
+
+            - standalone/mobile - The software is a standalone, self-contained
+            The software is a native mobile app.
+
+            - standalone/iot - The software is suitable for an IoT context.
+
+            - standalone/desktop - The software is typically installed and run
+            in a a desktop operating system environment.
+
+            - standalone/web - The software represents a web application usable
+            by means of a browser.
+
+            - standalone/backend - The software is a backend application.
+
+            - standalone/other - The software has a different nature from the
+            once listed above.
+
+            - softwareAddon - The software is an addon, such as a plugin or a
+            theme, for a more complex software (e.g. a CMS or an office suite).
+
+            -  library - The software contains a library or an SDK to make it
+            easier to third party developers to create new products.
+
+            - configurationFiles - The software does not contain executable
+            script but a set of configuration files. They may document how to
+            obtain a certain deployment. They could be in the form of plain
+            configuration files, bash scripts, ansible playbooks, Dockerfiles,
+            or other instruction sets.
+          example: standalone/web
+          enum:
+            - standalone/mobile
+            - standalone/iot
+            - standalone/desktop
+            - standalone/web
+            - standalone/backend
+            - standalone/other
+            - softwareAddon
+            - library
+            - configurationFiles
+        intendedAudience:
+          type: object
+          properties:
+            countries:
+              description: >-
+                This key explicitly includes certain countries in the intended
+                audience, i.e. the software explicitly claims compliance with
+                specific processes, technologies or laws. All countries are
+                specified using lowercase ISO 3166-1 alpha-2 two-letter country
+                codes.
+              type: array
+              items: {}
+            unsupportedCountries:
+              type: array
+              description: >-
+                This key explicitly marks countries as NOT supported. This might
+                be the case if there is a conflict between how software is
+                working and a specific law, process or technology. All countries
+                are specified using lowercase ISO 3166-1 alpha-2 two-letter
+                country codes.
+              items:
+                type: string
+            scope:
+              type: array
+              description: >-
+                This key contains a list of tags related to the field of
+                application of the software.
+              items:
+                type: string
+                example: agriculture
+                enum:
+                  - agriculture
+                  - culture
+                  - defence
+                  - education
+                  - emergency-services
+                  - employment
+                  - energy
+                  - environment
+                  - finance-and-economic-development
+                  - foreign-affairs
+                  - government
+                  - healthcare
+                  - infrastructures
+                  - justice
+                  - local-authorities
+                  - manufacturing
+                  - research
+                  - science-and-technology
+                  - security
+                  - society
+                  - sport
+                  - tourism
+                  - transportation
+                  - welfare
+        description:
+          type: object
+          description: >-
+            This section contains a general description of the software. Parsers
+            can use this section for instance to create a web page describing
+            the software.
+
+
+            Note: since all the strings contained in this section are
+            user-visible and written in a specific language, you must specify
+            the language you are editing the text in (using the IETF BCP 47
+            specifications) by creating a sub-section with that name. The
+            primary language subtag cannot be omitted, as mandated by the BCP
+            47.
+          properties:
+            '[lang]':
+              $ref: '#/components/schemas/Description'
+        legal:
+          type: object
+          description: >-
+            This section provides information on the legalstatus of the
+            software, useful to evaluate whether the software can be used or
+            not.
+
+
+            In the following part of the document, all keys are assumed to be in
+            a sub-section with the name of the language (we will note this with
+            [lang]).
+          properties:
+            license:
+              type: string
+              description: >-
+                This string describes the license under which the software is
+                distributed. The string must contain a valid SPDX expression,
+                referring to one (or multiple) open-source license. Please refer
+                to the SPDX documentation for further information.
+              example: EUPL-1.0-or-later
+            mainCopyrightOwner:
+              type: string
+              description: >-
+                This string describes the entity that owns the copyright on
+                “most” of the code in the repository. Normally, this is the line
+                that is reported with the copyright symbol at the top of most
+                files in the repo.
+
+
+                It is possible to list multiple owners if required so, using an
+                English sentence. It is also possible to informally refer to a
+                community of group of people like “Linus Torvalds and all Linux
+                contributors”.
+
+
+                In case it is not possible to name a main copyright owner, it is
+                possible to omit this key; in those cases, if the repo has a
+                authors file, you can point to it through legal/authorsFile.
+              example: City of Amsterdam
+            repoOwner:
+              type: string
+              description: >-
+                This string describes the entity that owns this repository; this
+                might or might not be the same entity who owns the copyright on
+                the code itself. For instance, in case of a fork of the original
+                software, the repoOwner is probably different from the
+                mainCopyrightOwner.
+              example: City of Amsterdam
+            authorsFile:
+              type: string
+              description: >-
+                Some open-source software adopt a convention of identify the
+                copyright holders through a file that lists all the entities
+                that own the copyright. This is common in projects strongly
+                backed by a community where there are many external contributors
+                and no clear single/main copyright owner. In such cases, this
+                key can be used to refer to the authors file, using a path
+                relative to the root of the repository.
+              example: doc/AUTHORS.txt
+        maintenance:
+          type: object
+          description: >-
+            This section provides information on the maintenance status of the
+            software, useful to evaluate whether the software is actively
+            developed or not.
+          properties:
+            type:
+              type: string
+              description: >-
+                This key describes how the software is currently maintained.
+
+
+                internal - means that the software is internally maintained by
+                the repository owner;
+
+
+                contract - means that there is a commercial contract that binds
+                an entity to the maintenance of the software;
+
+
+                community - means that the software is currently maintained by
+                one or more people that donate their time to the project;
+
+
+                none - means that the software is not actively maintained.
+              enum:
+                - internal
+                - contract
+                - community
+              example: none
+            contractors:
+              type: array
+              description: >-
+                This key describes the entity or entities, if any, that are
+                currently contracted for maintaining the software. They can be
+                companies, organizations, or other collective names.
+              items:
+                $ref: '#/components/schemas/Contractor'
+            contacts:
+              description: >-
+                One or more contacts maintaining this software.
+
+
+                This key describes the technical people currently responsible
+                for maintaining the software. All contacts need to be a physical
+                person, not a company or an organisation. If somebody is acting
+                as a representative of an institution, it must be listed within
+                the affiliation of the contact.
+
+
+                In case of a commercial agreement (or a chain of such
+                agreements), specify the final entities actually contracted to
+                deliver the maintenance. Do not specify the software owner
+                unless it is technically involved with the maintenance of the
+                product as well.
+              type: array
+              items:
+                $ref: '#/components/schemas/Contact'
+          required:
+            - type
+        localisation:
+          type: object
+          description: >-
+            This section provides an overview of the localization features of
+            the software.
+          properties:
+            localisationReady:
+              type: boolean
+              description: >-
+                If true, the software has infrastructure in place or is
+                otherwise designed to be multilingual. It does not need to be
+                available in more than one language.
+            availableLanguages:
+              type: array
+              description: >
+                If present, this is the list of languages in which the software
+                is available. Of course, this list will contain at least one
+                language. The primary language subtag cannot be omitted, as
+                mandated by the BCP 47.
+              items: {}
+          required:
+            - localisationReady
+        dependsOn:
+          type: object
+          description: >-
+            This section provides an overview on the system-level dependencies
+            required to install and use this software.
+
+
+            NOTE: do not list dependencies at the source code level (e.g.:
+            software libraries being used), and focus only on runtime and/or
+            system-level dependencies that must be installed and maintained
+            separately. For instance, a database is a good example of such
+            dependencies.
+          properties:
+            open:
+              type: array
+              description: >-
+                This key contains a list of runtime dependencies that are
+                distributed under an open-source license.
+              items:
+                $ref: '#/components/schemas/Dependency'
+            proprietary:
+              type: array
+              description: >-
+                This key contains a list of runtime dependencies that are
+                distributed under a proprietary license.
+              items:
+                $ref: '#/components/schemas/Dependency'
+            hardware:
+              type: array
+              description: >-
+                This key contains a list of hardware dependencies that must be
+                owned to use the software.
+              items:
+                $ref: '#/components/schemas/Dependency'
+      required:
+        - name
+      x-tags:
+        - component
+    Contact:
+      title: Contact
+      x-stoplight:
+        id: bspcro7twxzw5
+      type: object
+      examples:
+        - id: string
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          description: >-
+            This key contains the full name of one of the technical contacts. It
+            must be a real person; do NOT populate this key with generic contact
+            information, company departments, associations, etc.
+        email:
+          type: string
+          description: >-
+            This key contains the e-mail address of the technical contact. It
+            must be an email address of where the technical contact can be
+            directly reached; do NOT populate this key with mailing-lists or
+            generic contact points like “info@acme.inc”. The e-mail address must
+            not be obfuscated. To improve resistance against e-mail collection,
+            use \x64 to replace @, as allowed by the YAML specification.
+          format: email
+        phone:
+          type: string
+          description: phone number (with international prefix). This has to be a string.
+        affiliation:
+          type: string
+          description: >-
+            This key contains an explicit affiliation information for the
+            technical contact. In case of multiple maintainers, this can be used
+            to create a relation between each technical contact and each
+            maintainer entity. It can contain for instance a company name, an
+            association name, etc.
+      required:
+        - name
+      x-tags:
+        - contact
+    Contractor:
+      title: Contractor
+      x-stoplight:
+        id: wmxrj9lq1v5y2
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          description: >-
+            The name of the contractor, whether it’s a company or a physical
+            person.
+        until:
+          type: string
+          description: >-
+            This is a date (YYYY-MM-DD). This key must contain the date at which
+            the maintenance is going to end. In case of community maintenance,
+            the value should not be more than 2 years in the future, and thus
+            will need to be regularly updated as the community continues working
+            on the project.
+          format: date
+        email:
+          type: string
+          format: email
+          description: >-
+            This key contains the e-mail address of the technical contact. It
+            must be an email address of where the technical contact can be
+            directly reached; do NOT populate this key with mailing-lists or
+            generic contact points like “info@acme.inc”. The e-mail address must
+            not be obfuscated. To improve resistance against e-mail collection,
+            use \x64 to replace @, as allowed by the YAML specification.
+        website:
+          type: string
+          format: url
+          description: >-
+            This key points to the maintainer website. It can either point to
+            the main institutional website, or to a more project-specific page
+            or website.
+      required:
+        - id
+        - name
+      x-tags:
+        - contractor
+    Dependency:
+      title: Dependency
+      x-stoplight:
+        id: 9i3us044e6i0o
+      type: object
+      properties:
+        id:
+          type: string
+      x-tags:
+        - dependency
+    Description:
+      title: Description
+      x-stoplight:
+        id: 8c1akpli341fd
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        localisedName:
+          type: string
+          description: >-
+            This key is an opportunity to localise the name in a specific
+            language. It contains the (short) public name of the product. It
+            should be the name most people usually refer to the software. In
+            case the software has both an internal “code” name and a commercial
+            name, use the commercial name.
+          example: Medusa
+        shortDescription:
+          type: string
+          maxLength: 150
+          description: >-
+            This key contains a short description of the software. It should be
+            a single line containing a single sentence. Maximum 150 characters
+            are allowed.
+          example: Advanced booking system for hospitals
+        longDescription:
+          type: string
+          description: >-
+            This key contains a longer description of the software, between 150
+            and 10000 chars. It is meant to provide an overview of the
+            capabilities of the software for a potential user. The audience for
+            this text should be that of users of the software, not developers.
+            You can think of this text as the description of the software that
+            would be in its website (if the software had one).
+
+
+            This description can contain some basic markdown: *italic*,
+            **bold**, bullet points and [links](#).
+          minLength: 150
+          maxLength: 10000
+        documentation:
+          type: string
+          description: >-
+            This key contains a reference to the user-level (not
+            developer-level) documentation of the software. The value must be a
+            URL to a hosted version of the documentation.
+
+
+            It is suggested that the URL points to a hosted version of the
+            documentation that is immediately readable through a common web
+            browser in both desktop and mobile format. The documentation should
+            be rendered in HTML and browsable like a website (with a navigation
+            index, a search bar, etc.).
+
+
+            If the documentation is instead available only as a document, put a
+            direct view/download link as URL in this key. You should commit the
+            document as part of the source code repository, and then link to it
+            using the code hosting source browser URL (e.g.: GitHub URL to the
+            file). Prefer using open formats like PDF or ODT for maximum
+            interoperability.
+
+
+            Whichever the format for the documentation, remember to make its
+            source files available under an open license, possibly by committing
+            them as part of the repository itself.
+          format: url
+        apiDocumentation:
+          type: string
+          description: >-
+            This key contains a reference to the API documentation of the
+            software. The value must be a URL to a hosted version of the
+            documentation.
+
+
+            It is suggested that the URL points to a hosted version of the
+            documentation that is immediately readable through a common web
+            browser. The documentation should be rendered in HTML and browsable
+            like a website (with a navigation index, a search bar, etc.), and if
+            there is a reference or test deployment, possibly offer an
+            interactive interface (e.g. Swagger).
+
+
+            If the documentation is instead available only as a document, put a
+            direct view/download link as URL in this key. You should commit the
+            document as part of the source code repository, and then link to it
+            using the code hosting source browser URL (e.g.: GitHub URL to the
+            file). Prefer using open formats like PDF or ODT for maximum
+            interoperability.
+
+
+            Whichever the format for the documentation, remember to make its
+            source files available under an open license, possibly by committing
+            them as part of the repository itself.
+          format: url
+        features:
+          description: >-
+            This key contains a list of software features, describing what
+            capabilities the software allows to do. The audience for this text
+            should be that of public decision makers who will be commissioning
+            the software. The features should thus not target developers;
+            instead of listing technical features referring to implementation
+            details, prefer listing user-visible functionalities of the
+            software.
+
+
+            While the key is mandatory, there is no mandatory minimum or maximum
+            number of features that should be listed in this key.
+
+
+            The suggested number of features to list is between 5 and 20,
+            depending on the software size and complexity. There is no need for
+            exhaustiveness, as users can always read the documentation for
+            additional information.
+          type: array
+          items:
+            type: string
+        screenshots:
+          type: array
+          description: >-
+            This key contains one or multiple paths to files showing screenshots
+            of the software. They are meant to give a quick idea on how the
+            software looks like and how it works. The key value can be the
+            relative path to the file starting from the root of the repository,
+            or it can be an absolute URL pointing to the screenshot in raw
+            version. In both cases, the file must reside inside the same
+            repository where the publiccode.yml file is stored.
+
+
+            Screenshots can be of any shape and size; the suggested formats are:
+
+
+            - Desktop: 1280x800 @1x
+
+            - Tablet: 1024x768 @2x
+
+            - Mobile: 375x667 @2x
+          items:
+            type: string
+        videos:
+          description: >-
+            This key contains one or multiple URLs of videos showing how the
+            software works. Like screenshots, videos should be used to give a
+            quick overview on how the software looks like and how it works.
+            Videos must be hosted on a video sharing website that supports the
+            oEmbed standard; popular options are YouTube and Vimeo.
+
+
+            Since videos are an integral part of the documentation, it is
+            recommended to publish them with an open license.
+          type: array
+          items:
+            type: string
+            format: url
+        awards:
+          description: A list of awards won by the software.
+          type: array
+          items:
+            type: string
+            format: url
+      required:
+        - features
+      x-tags:
+        - description
