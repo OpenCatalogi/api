@@ -18,13 +18,23 @@
       {
         "properties": {
           "name": "Adresservice",
-          "applicationSuite": {
-            "name": "Adresservice"
+          "layerType": "services",
+          "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+          "organisationName": "Conduction",
+          "contact": "[ruben@conduction.nl](mailto:ruben@conduction.nl)",
+          "repositoryUrl": "https://github.com/ConductionNL/adresservice",
+          "reuseType": "zelf installeren",
+          "expectedQuarter": null,
+          "expectedYear": null,
+          "developedBy": null,
+          "status": "bruikbaar",
+          "owner": {
+              "id": 5,
+              "fullName": "Ruben van der Linde",
+              "email": "[ruben@conduction.nl](mailto:ruben@conduction.nl)",
+              "pictureUrl": "https://account.pleio.nl/media/avatars/2019/07/04/60221507/large_jjMfUkz.jpg"
           },
-          "url": "https://example.com/italia/medusa.git",
-          "landingURL": "https://example.com/italia/medusa",
-          "isBasedOn": "https://github.com/italia/otello.git",
-          "softwareVersion": "1.0"
+          "createdAt": "2020-02-18T10:37:28.710861Z"
         }
       }
     ]
