@@ -4,37 +4,133 @@
   "schemas": {
     "Component":[
       {
-        "properties": {
-          "name": "Medusa",
-          "applicationSuite": {
-            "name": "Medusa"
-          },
-          "url": "https://example.com/italia/medusa.git",
-          "landingURL": "https://example.com/italia/medusa",
-          "isBasedOn": "https://github.com/italia/otello.git",
-          "softwareVersion": "1.0"
+          "properties": {
+            "applicationSuite": {
+              "name": "Adresservice"
+            },
+            "categories": null,
+            "dependsOn": null,
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "developmentStatus": "bruikbaar",
+            "intendedAudience": "interactie",
+            "isBasedOn": "https://github.com/ConductionNL/adresservice",
+            "landingURL": null,
+            "legal": null,
+            "localisation": null,
+            "logo": null,
+            "maintenance": null,
+            "name": "Adresservice",
+            "platforms": null,
+            "releaseDate": "2020-02-18T10:37:28.710861Z",
+            "roadmap": null,
+            "softwareType": "zelf installeren",
+            "softwareVersion": "1.0",
+            "url": "https://github.com/ConductionNL/adresservice",
+            "usedBy": null
         }
       },
       {
-        "properties": {
-          "name": "Adresservice",
-          "layerType": "services",
-          "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-          "organisationName": "Conduction",
-          "contact": "[ruben@conduction.nl](mailto:ruben@conduction.nl)",
-          "repositoryUrl": "https://github.com/ConductionNL/adresservice",
-          "reuseType": "zelf installeren",
-          "expectedQuarter": null,
-          "expectedYear": null,
-          "developedBy": null,
-          "status": "bruikbaar",
-          "owner": {
-              "id": 5,
-              "fullName": "Ruben van der Linde",
-              "email": "[ruben@conduction.nl](mailto:ruben@conduction.nl)",
-              "pictureUrl": "https://account.pleio.nl/media/avatars/2019/07/04/60221507/large_jjMfUkz.jpg"
-          },
-          "createdAt": "2020-02-18T10:37:28.710861Z"
+          "properties": {
+            "applicationSuite": {
+              "name": "Medusa"
+            },
+            "categories": null,
+            "dependsOn": null,
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "developmentStatus": "gewenst",
+            "intendedAudience": "proces",
+            "isBasedOn": "https://github.com/ConductionNL/adresservice",
+            "landingURL": null,
+            "legal": null,
+            "localisation": null,
+            "logo": null,
+            "maintenance": null,
+            "name": "Medusa",
+            "platforms": null,
+            "releaseDate": "2020-02-18T10:37:28.710861Z",
+            "roadmap": null,
+            "softwareType": "landelijke voorziening",
+            "softwareVersion": "1.0",
+            "url": "https://github.com/ConductionNL/adresservice",
+            "usedBy": null
+        }
+      },
+      {
+          "properties": {
+            "applicationSuite": {
+              "name": "Medusa 2"
+            },
+            "categories": null,
+            "dependsOn": null,
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "developmentStatus": "gepland",
+            "intendedAudience": "integratie",
+            "isBasedOn": "https://github.com/ConductionNL/adresservice",
+            "landingURL": null,
+            "legal": null,
+            "localisation": null,
+            "logo": null,
+            "maintenance": null,
+            "name": "Medusa 2",
+            "platforms": null,
+            "releaseDate": "2020-02-18T10:37:28.710861Z",
+            "roadmap": null,
+            "softwareType": "zelf installeren",
+            "softwareVersion": "1.0",
+            "url": "https://github.com/ConductionNL/adresservice",
+            "usedBy": null
+        }
+      },
+      {
+          "properties": {
+            "applicationSuite": {
+              "name": "Medusa 3"
+            },
+            "categories": null,
+            "dependsOn": null,
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "developmentStatus": "beta",
+            "intendedAudience": "services",
+            "isBasedOn": "https://github.com/ConductionNL/adresservice",
+            "landingURL": null,
+            "legal": null,
+            "localisation": null,
+            "logo": null,
+            "maintenance": null,
+            "name": "Medusa 3",
+            "platforms": null,
+            "releaseDate": "2020-02-18T10:37:28.710861Z",
+            "roadmap": null,
+            "softwareType": "zelf installeren",
+            "softwareVersion": "1.0",
+            "url": "https://github.com/ConductionNL/adresservice",
+            "usedBy": null
+        }
+      },
+      {
+          "properties": {
+            "applicationSuite": {
+              "name": "Medusa 4"
+            },
+            "categories": null,
+            "dependsOn": null,
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "developmentStatus": "uitgefaseerd",
+            "intendedAudience": "data",
+            "isBasedOn": "https://github.com/ConductionNL/adresservice",
+            "landingURL": null,
+            "legal": null,
+            "localisation": null,
+            "logo": null,
+            "maintenance": null,
+            "name": "Medusa 4",
+            "platforms": null,
+            "releaseDate": "2020-02-18T10:37:28.710861Z",
+            "roadmap": null,
+            "softwareType": "landelijke voorziening",
+            "softwareVersion": "1.0",
+            "url": "https://github.com/ConductionNL/adresservice",
+            "usedBy": null
         }
       }
     ]
