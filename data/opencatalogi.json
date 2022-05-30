@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.0",
+  "collection": "https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml",
+  "schemas": {
+    "Component":[
+      {
+        "properties": {
+          "name": "Medusa",
+          "applicationSuite": {
+            "name": "Medusa"
+          },
+          "url": "https://example.com/italia/medusa.git",
+          "landingURL": "https://example.com/italia/medusa",
+          "isBasedOn": "https://github.com/italia/otello.git",
+          "softwareVersion": "1.0"
+        }
+      },
+      {
+        "properties": {
+          "name": "Adresservice",
+          "applicationSuite": {
+            "name": "Adresservice"
+          },
+          "url": "https://example.com/italia/medusa.git",
+          "landingURL": "https://example.com/italia/medusa",
+          "isBasedOn": "https://github.com/italia/otello.git",
+          "softwareVersion": "1.0"
+        }
+      }
+    ]
+  }
+}
