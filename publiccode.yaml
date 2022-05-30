@@ -35,12 +35,12 @@ description:
     shortDescription: "Een API om open source projecten te delen."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml&nocors'
     apiDocumentation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml'
-#     testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/klanten_publiccode/main/data/klanten.json'
+    testDataLocation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json'
   en:
     shortDescription: "An API to share open source projects"
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml&nocors'
     apiDocumentation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml'
-#     testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/klanten_publiccode/main/data/klanten.json'
+    testDataLocation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json'
 
 dependsOn:
   open:
