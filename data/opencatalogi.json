@@ -10,12 +10,9 @@
             },
             "categories": null,
             "dependsOn": null,
-            "description": {
-              "longDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "features": ["interactie"]
-            },
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
             "developmentStatus": "bruikbaar",
-            "intendedAudience": null,
+            "intendedAudience": "interactie",
             "isBasedOn": "https://github.com/ConductionNL/adresservice",
             "landingURL": null,
             "legal": null,
@@ -43,12 +40,9 @@
             },
             "categories": null,
             "dependsOn": null,
-            "description": {
-              "longDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "features": ["proces"]
-            },
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
             "developmentStatus": "gewenst",
-            "intendedAudience": null,
+            "intendedAudience": "proces",
             "isBasedOn": "https://github.com/ConductionNL/adresservice",
             "landingURL": null,
             "legal": null,
@@ -76,12 +70,9 @@
             },
             "categories": null,
             "dependsOn": null,
-            "description": {
-              "longDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "features": ["integratie"]
-            },
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
             "developmentStatus": "gepland",
-            "intendedAudience": null,
+            "intendedAudience": "integratie",
             "isBasedOn": "https://github.com/ConductionNL/adresservice",
             "landingURL": null,
             "legal": null,
@@ -109,11 +100,9 @@
             },
             "categories": null,
             "dependsOn": null,
-            "description": {
-              "longDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "features": ["services"]
-            },
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
             "developmentStatus": "beta",
+            "intendedAudience": "services",
             "isBasedOn": "https://github.com/ConductionNL/adresservice",
             "landingURL": null,
             "legal": null,
@@ -141,12 +130,9 @@
             },
             "categories": null,
             "dependsOn": null,
-            "description": {
-              "longDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "features": ["data"]
-            },
+            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
             "developmentStatus": "uitgefaseerd",
-            "intendedAudience": null,
+            "intendedAudience": "data",
             "isBasedOn": "https://github.com/ConductionNL/adresservice",
             "landingURL": null,
             "legal": null,
