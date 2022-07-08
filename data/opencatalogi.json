@@ -12,7 +12,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "laserType": "string"
+                "layerType": "string"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
