@@ -4,34 +4,107 @@
   "schemas": {
     "Component":[
       {
-          "properties": {
+         "properties": {
             "applicationSuite": {
               "name": "Adresservice"
             },
-            "categories": null,
-            "dependsOn": null,
-            "description": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "nl": {
+              "commonground": {
+                "intendedOrganizations": ["Conduction"],
+                "installationType": "helm",
+                "laserType": "string"
+              },
+              "gemma": {
+                "bedrijfsfuncties": ["string"],
+                "bedrijfsservices": ["string"],
+                "applicatiefunctie": "string",
+                "referentieComponenten": ["test"]
+              },
+              "upl": ["UniformeProductnaam"],
+              "apm": {}
+            },  
+            "categories": [
+              "Acounting"
+            ],
+            "dependsOn": {
+              "open": [
+                {}
+              ],
+              "proprietary": [
+                {}
+              ],
+              "hardware": [
+                {}
+              ]
+            },
+            "description": {
+              "localisedName": "Adresservice",
+              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+              "longDescription": "This component is based on the following schema.org sources: Address Person",
+              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+              "features": ["API"],
+              "screenshots": ["example.com"],
+              "videos": ["example.com"],
+              "awards": ["example.com"]
+            },
             "developmentStatus": "bruikbaar",
-            "intendedAudience": "interactie",
+            "intendedAudience": {
+                "countries": [
+                    "nl"
+                  ],
+                "unsupportedCountries": [
+                    "de"
+                ],
+                "scope": [
+                    "agriculture",
+                    "culture"
+                ]
+            },
             "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": null,
-            "legal": null,
-            "localisation": null,
-            "logo": null,
+            "landingURL": "https://github.com/ConductionNL/adresservice",
+            "legal": {
+              "license": "EUPL-1.0-or-later",
+              "mainCopyrightOwner": "City of Amsterdam",
+              "repoOwner": "City of Amsterdam",
+              "authorsFile": "doc/AUTHORS.txt"
+            },
+            "localisation": {
+              "localisationReady": true,
+              "availableLanguages": ["en", "nl"]
+            },
+            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
+              "type": "community",
+              "contractors": [{
+                "name": "Conduction",
+                "until": "2022-07-22",
+                "email": "johndoe@example.com",
+                "website": "http://localhost",
+                "phone": "+31612345678"
+              }],
               "contacts": [{
-                "name": "Conduction"
-              }]
+                "name": "Conduction",
+                "email": "johndoe@example.com",
+                "phone": "+31612345678",
+                "affiliation": "CommonGround"
+              }] 
             },
             "name": "Adresservice",
-            "platforms": null,
+            "platforms": ["web"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": null,
-            "softwareType": "zelf installeren",
+            "roadmap": "https://vng.nl/agenda",
+            "softwareType": "standalone/web",
             "softwareVersion": "1.0",
+            "layerType": "interface",
+            "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": null
-        }
+            "usedBy": [
+              "City of Amsterdam"
+            ],
+            "inputTypes": ["string"],
+            "outputTypes": ["string"]
+         }
       },
       {
           "properties": {
