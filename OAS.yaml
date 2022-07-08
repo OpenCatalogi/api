@@ -164,6 +164,9 @@ components:
         id:
           type: string
           format: uuid
+        applicationId:
+          type: string
+          example: '487842915'
         name:
           type: string
           description: 'This key contains the name of the software. It contains the (short) public name of the product, which can be localised in the specific localisation section. It should be the name most people usually refer to the software. In case the software has both an internal “code” name and a commercial name, use the commercial name.'
@@ -494,10 +497,6 @@ components:
                     type: string
                 applicatiefunctie:
                   type: string
-                referentieComponenten:
-                  type: array
-                  items:
-                    type: string
                 model:
                   type: string
                   description: Het soort model (mag alleen worden gebruikt als het type schema is).
@@ -507,6 +506,10 @@ components:
                     - Logisch
                     - Fysiek
                   example: Semantisch
+                referentieComponenten:
+                  type: array
+                  items:
+                    type: string
             apm:
               type: object
             upl:
