@@ -45,22 +45,12 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  results:
-                    type:
-                      - string
-                      - array
-                    items:
-                      $ref: '#/components/schemas/Component'
+                type: array
+                items:
+                  $ref: '#/components/schemas/Component'
       operationId: get-components
       description: ''
-      parameters:
-        - schema:
-            type: string
-          in: query
-          name: type
-          description: The type of components that you want returned
+      parameters: []
   '/components/{id}':
     parameters:
       - schema:
@@ -354,14 +344,7 @@ components:
                   - transportation
                   - welfare
         description:
-          type: object
-          description: |-
-            This section contains a general description of the software. Parsers can use this section for instance to create a web page describing the software.
-
-            Note: since all the strings contained in this section are user-visible and written in a specific language, you must specify the language you are editing the text in (using the IETF BCP 47 specifications) by creating a sub-section with that name. The primary language subtag cannot be omitted, as mandated by the BCP 47.
-          properties:
-            '[lang]':
-              $ref: '#/components/schemas/Description'
+          $ref: '#/components/schemas/Description'
         legal:
           type: object
           description: |-
@@ -618,6 +601,8 @@ components:
           type: string
       x-tags:
         - dependency
+      examples:
+        - id: string
     Description:
       title: Description
       x-stoplight:
