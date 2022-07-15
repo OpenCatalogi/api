@@ -12,7 +12,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "services"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -91,12 +91,11 @@
               }] 
             },
             "name": "Adresservice",
-            "platforms": ["web"],
+            "platforms": ["web", "linux", "mac"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "services",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -115,7 +114,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "proces"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -178,7 +177,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -194,12 +193,11 @@
               }] 
             },
             "name": "Vestibulum Ante Ipsum",
-            "platforms": ["web"],
+            "platforms": ["web", "windows", "mac", "linux", "ios", "android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "proces",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -218,7 +216,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "data"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -281,7 +279,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -297,12 +295,11 @@
               }] 
             },
             "name": "Venenatis Lorem Cras",
-            "platforms": ["web"],
+            "platforms": ["windows", "linux", "mac"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "data",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -321,7 +318,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "integratie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -384,7 +381,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -400,12 +397,11 @@
               }] 
             },
             "name": "Quisque Rutrum",
-            "platforms": ["web"],
+            "platforms": ["web", "linux", "android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "integratie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -424,7 +420,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "data"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -487,7 +483,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -503,12 +499,11 @@
               }] 
             },
             "name": "Venenatis Lorem Cras",
-            "platforms": ["web"],
+            "platforms": ["web", "android", "windows"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "data",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -527,7 +522,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "proces"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -606,12 +601,11 @@
               }] 
             },
             "name": "Morbi Mattis Ullamcorper Velit",
-            "platforms": ["web"],
+            "platforms": ["web", "windows", "linux", "android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "proces",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -630,7 +624,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "services"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -709,12 +703,11 @@
               }] 
             },
             "name": "Donec Quam Felis",
-            "platforms": ["web"],
+            "platforms": ["windows", "ios"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "services",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -733,7 +726,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "integratie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -812,12 +805,11 @@
               }] 
             },
             "name": "Venenatis Lorem Cras",
-            "platforms": ["web"],
+            "platforms": ["web", "ios", "mac", "linux"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "integratie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -836,7 +828,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "data"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -915,12 +907,11 @@
               }]
             },
             "name": "Ultricies Nec",
-            "platforms": ["web"],
+            "platforms": ["android", "linux"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "data",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -939,7 +930,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1018,12 +1009,11 @@
               }] 
             },
             "name": "Volutpat Molestie",
-            "platforms": ["web"],
+            "platforms": ["web", "ios"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1042,7 +1032,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1121,12 +1111,11 @@
               }] 
             },
             "name": "Aliquet Eget",
-            "platforms": ["web"],
+            "platforms": ["windows"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1145,7 +1134,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1208,7 +1197,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1229,7 +1218,6 @@
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1248,7 +1236,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1311,7 +1299,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1327,12 +1315,11 @@
               }] 
             },
             "name": "OpenCatalogi",
-            "platforms": ["web"],
+            "platforms": ["linux", "windows"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1351,7 +1338,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1414,7 +1401,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1430,12 +1417,11 @@
               }] 
             },
             "name": "Pellentesque Ut Neque",
-            "platforms": ["web"],
+            "platforms": ["web", "ios"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1454,7 +1440,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1517,7 +1503,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1533,12 +1519,11 @@
               }] 
             },
             "name": "Ligula Arcu Tristique Sapien",
-            "platforms": ["web"],
+            "platforms": ["android", "linux", "web" ],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1557,7 +1542,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "proces"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1620,7 +1605,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1636,12 +1621,11 @@
               }] 
             },
             "name": "Vivamus Aliquet Elit Ac Nisl",
-            "platforms": ["web"],
+            "platforms": ["windows", "linux", "android", "ios"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "proces",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1660,7 +1644,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "data"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1723,7 +1707,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1739,12 +1723,11 @@
               }] 
             },
             "name": "Metus",
-            "platforms": ["web"],
+            "platforms": ["web", "linux"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "data",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1763,7 +1746,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "integratie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1826,7 +1809,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1842,12 +1825,11 @@
               }] 
             },
             "name": "Nonummy Id",
-            "platforms": ["web"],
+            "platforms": ["web", "windows", "mac", "linux", "ios", "android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "integratie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1866,7 +1848,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "services"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -1929,7 +1911,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -1945,12 +1927,11 @@
               }] 
             },
             "name": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor",
-            "platforms": ["web"],
+            "platforms": ["android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "services",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -1969,7 +1950,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "proces"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2032,7 +2013,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -2048,12 +2029,11 @@
               }] 
             },
             "name": "Pellentesque Ut Neque Ligula",
-            "platforms": ["web"],
+            "platforms": ["ios"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "proces",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -2072,7 +2052,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "proces"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2151,12 +2131,11 @@
               }] 
             },
             "name": "Amet Ultrices",
-            "platforms": ["web"],
+            "platforms": ["linux"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "landelijke voorziening",
             "softwareVersion": "1.0",
-            "layerType": "proces",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -2175,7 +2154,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "services"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2259,7 +2238,6 @@
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "services",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -2278,7 +2256,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2341,7 +2319,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "internal",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -2357,12 +2335,11 @@
               }] 
             },
             "name": "Convallis Metus Id",
-            "platforms": ["web"],
+            "platforms": ["windows"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "standalone/web",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -2381,7 +2358,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2460,12 +2437,11 @@
               }] 
             },
             "name": "Semper A Sagittis Ne",
-            "platforms": ["web"],
+            "platforms": ["windows", "linux"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -2484,7 +2460,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2547,7 +2523,7 @@
             },
             "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
             "maintenance": {
-              "type": "community",
+              "type": "contract",
               "contractors": [{
                 "name": "Conduction",
                 "until": "2022-07-22",
@@ -2563,12 +2539,11 @@
               }] 
             },
             "name": "Suspendisse",
-            "platforms": ["web"],
+            "platforms": ["ios", "mac", "android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
@@ -2587,7 +2562,7 @@
               "commonground": {
                 "intendedOrganizations": ["Conduction"],
                 "installationType": "helm",
-                "layerType": "string"
+                "layerType": "interactie"
               },
               "gemma": {
                 "bedrijfsfuncties": ["string"],
@@ -2666,12 +2641,11 @@
               }] 
             },
             "name": "Nisl Quis Enim Dignissim",
-            "platforms": ["web"],
+            "platforms": ["web", "android"],
             "releaseDate": "2020-02-18T10:37:28.710861Z",
             "roadmap": "https://vng.nl/agenda",
             "softwareType": "zelf installeren",
             "softwareVersion": "1.0",
-            "layerType": "interactie",
             "installationType": "self",
             "url": "https://github.com/ConductionNL/adresservice",
             "usedBy": [
