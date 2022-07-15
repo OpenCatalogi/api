@@ -126,6 +126,7 @@ components:
         - The `inputType` property was used (its depracticed in PublicCode)
         - The `outputType` property was uses (its depracticed in PublicCode)
         - The `nl` country exenstion was added in line with the [PublicCode country extensions](https://yml.publiccode.tools/country.html) guidelines
+        - applicationId was added for the codebase repository (like a github repository id).
       examples:
         - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
           name: Medusa
@@ -455,9 +456,7 @@ components:
           description: 'Extension to the publiccode standard for the netherlands by [vng](https://vng.nl/) in accordance with the publiccode [Country-Specific Sections](https://yml.publiccode.tools/country.html)'
           properties:
             commonground:
-              type:
-                - string
-                - object
+              type: object
               description: 'Commonground specific properties for use with the [componnenten catalogue](https://componentencatalogus.commonground.nl/).'
               properties:
                 intendedOrganisations:
