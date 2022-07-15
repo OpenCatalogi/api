@@ -2,2658 +2,2320 @@
   "openapi": "3.0.0",
   "collection": "https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml",
   "schemas": {
-    "Component":[
+    "Component": [
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Adresservice"
+        "properties": {
+          "applicationSuite": {
+            "name": "Adresservice"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "services"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "services"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Adresservice",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "bruikbaar",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "City of Amsterdam",
-              "repoOwner": "City of Amsterdam",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Adresservice",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "bruikbaar",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "City of Amsterdam",
+            "repoOwner": "City of Amsterdam",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Adresservice",
-            "platforms": ["web", "linux", "mac"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Adresservice",
+          "platforms": ["web", "linux", "mac"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "api",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Vestibulum Ante Ipsum"
+        "properties": {
+          "applicationSuite": {
+            "name": "Vestibulum Ante Ipsum"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "proces"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "proces"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Vestibulum Ante Ipsum",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gewenst",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Utrecht",
-              "repoOwner": "Gemeente Utrecht",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Vestibulum Ante Ipsum",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gewenst",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Utrecht",
+            "repoOwner": "Gemeente Utrecht",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Vestibulum Ante Ipsum",
-            "platforms": ["web", "windows", "mac", "linux", "ios", "android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Vestibulum Ante Ipsum",
+          "platforms": ["web", "windows", "mac", "linux", "ios", "android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/other",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Venenatis Lorem Cras"
+        "properties": {
+          "applicationSuite": {
+            "name": "Venenatis Lorem Cras"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "data"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "data"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Venenatis Lorem Cras",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gepland",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Rotterdam",
-              "repoOwner": "Gemeente Rotterdam",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Venenatis Lorem Cras",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gepland",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Rotterdam",
+            "repoOwner": "Gemeente Rotterdam",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Venenatis Lorem Cras",
-            "platforms": ["windows", "linux", "mac"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Venenatis Lorem Cras",
+          "platforms": ["windows", "linux", "mac"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/web",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Quisque Rutrum"
+        "properties": {
+          "applicationSuite": {
+            "name": "Quisque Rutrum"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "integratie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "integratie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Quisque Rutrum",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "beta",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Rotterdam",
-              "repoOwner": "Gemeente Rotterdam",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Quisque Rutrum",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "beta",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Rotterdam",
+            "repoOwner": "Gemeente Rotterdam",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Quisque Rutrum",
-            "platforms": ["web", "linux", "android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Quisque Rutrum",
+          "platforms": ["web", "linux", "android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "api",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Venenatis Lorem Cras"
+        "properties": {
+          "applicationSuite": {
+            "name": "Venenatis Lorem Cras"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "data"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "data"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Venenatis Lorem Cras",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "uitgefaseerd",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Den Haag",
-              "repoOwner": "Gemeente Den Haag",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Venenatis Lorem Cras",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "uitgefaseerd",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Den Haag",
+            "repoOwner": "Gemeente Den Haag",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Venenatis Lorem Cras",
-            "platforms": ["web", "android", "windows"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Venenatis Lorem Cras",
+          "platforms": ["web", "android", "windows"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/mobile",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Morbi Mattis Ullamcorper Velit"
+        "properties": {
+          "applicationSuite": {
+            "name": "Morbi Mattis Ullamcorper Velit"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "proces"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "proces"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Morbi Mattis Ullamcorper Velit",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "bruikbaar",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Conxillium",
-              "repoOwner": "Conxillium",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Morbi Mattis Ullamcorper Velit",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "bruikbaar",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Conxillium",
+            "repoOwner": "Conxillium",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Morbi Mattis Ullamcorper Velit",
-            "platforms": ["web", "windows", "linux", "android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Morbi Mattis Ullamcorper Velit",
+          "platforms": ["web", "windows", "linux", "android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/web",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Donec Quam Felis"
+        "properties": {
+          "applicationSuite": {
+            "name": "Donec Quam Felis"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "services"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "services"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Donec Quam Felis",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gepland",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Conduction",
-              "repoOwner": "Conduction",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Donec Quam Felis",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gepland",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Conduction",
+            "repoOwner": "Conduction",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Donec Quam Felis",
-            "platforms": ["windows", "ios"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Donec Quam Felis",
+          "platforms": ["windows", "ios"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/web",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Venenatis Lorem Cras"
+        "properties": {
+          "applicationSuite": {
+            "name": "Venenatis Lorem Cras"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "integratie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "integratie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Venenatis Lorem Cras",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "beta",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Buren",
-              "repoOwner": "Gemeente Buren",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Venenatis Lorem Cras",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "beta",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Buren",
+            "repoOwner": "Gemeente Buren",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Venenatis Lorem Cras",
-            "platforms": ["web", "ios", "mac", "linux"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Venenatis Lorem Cras",
+          "platforms": ["web", "ios", "mac", "linux"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/desktop",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Ultricies Nec"
+        "properties": {
+          "applicationSuite": {
+            "name": "Ultricies Nec"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "data"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "data"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Ultricies Nec",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "beta",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Maastricht",
-              "repoOwner": "Gemeente Maastricht",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Ultricies Nec",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "beta",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Maastricht",
+            "repoOwner": "Gemeente Maastricht",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }]
-            },
-            "name": "Ultricies Nec",
-            "platforms": ["android", "linux"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Ultricies Nec",
+          "platforms": ["android", "linux"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/desktop",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Volutpat Molestie"
+        "properties": {
+          "applicationSuite": {
+            "name": "Volutpat Molestie"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Volutpat Molestie",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gepland",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "City of Amsterdam",
-              "repoOwner": "City of Amsterdam",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Volutpat Molestie",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gepland",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "City of Amsterdam",
+            "repoOwner": "City of Amsterdam",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Volutpat Molestie",
-            "platforms": ["web", "ios"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Volutpat Molestie",
+          "platforms": ["web", "ios"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "library",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Aliquet Eget"
+        "properties": {
+          "applicationSuite": {
+            "name": "Aliquet Eget"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Aliquet Eget",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gewenst",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "City of Amsterdam",
-              "repoOwner": "City of Amsterdam",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Aliquet Eget",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gewenst",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "City of Amsterdam",
+            "repoOwner": "City of Amsterdam",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Aliquet Eget",
-            "platforms": ["windows"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Aliquet Eget",
+          "platforms": ["windows"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "data",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Ut Id Nisl Quis Enim Dignissim Sagittis"
+        "properties": {
+          "applicationSuite": {
+            "name": "Ut Id Nisl Quis Enim Dignissim Sagittis"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Ut Id Nisl Quis Enim Dignissim Sagittis",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gewenst",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Conduction",
-              "repoOwner": "Conduction",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Ut Id Nisl Quis Enim Dignissim Sagittis",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gewenst",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Conduction",
+            "repoOwner": "Conduction",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Ut Id Nisl Quis Enim Dignissim Sagittis",
-            "platforms": ["web"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Ut Id Nisl Quis Enim Dignissim Sagittis",
+          "platforms": ["web"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "configurationFiles",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "OpenCatalogi"
+        "properties": {
+          "applicationSuite": {
+            "name": "OpenCatalogi"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "OpenCatalogi",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "beta",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Conduction",
-              "repoOwner": "Conduction",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "OpenCatalogi",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "beta",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Conduction",
+            "repoOwner": "Conduction",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "OpenCatalogi",
-            "platforms": ["linux", "windows"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "OpenCatalogi",
+          "platforms": ["linux", "windows"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "softwareAddon",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Pellentesque Ut Neque"
+        "properties": {
+          "applicationSuite": {
+            "name": "Pellentesque Ut Neque"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Pellentesque Ut Neque",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "uitgefasseerd",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Den Haag",
-              "repoOwner": "Gemeente Den Haag",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Pellentesque Ut Neque",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "uitgefasseerd",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Den Haag",
+            "repoOwner": "Gemeente Den Haag",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Pellentesque Ut Neque",
-            "platforms": ["web", "ios"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Pellentesque Ut Neque",
+          "platforms": ["web", "ios"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/web",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Ligula Arcu Tristique Sapien"
+        "properties": {
+          "applicationSuite": {
+            "name": "Ligula Arcu Tristique Sapien"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Ligula Arcu Tristique Sapien",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gepland",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Den Haag",
-              "repoOwner": "Gemeente Den Haag",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Ligula Arcu Tristique Sapien",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gepland",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Den Haag",
+            "repoOwner": "Gemeente Den Haag",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Ligula Arcu Tristique Sapien",
-            "platforms": ["android", "linux", "web" ],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Ligula Arcu Tristique Sapien",
+          "platforms": ["android", "linux", "web"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/mobile",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Vivamus Aliquet Elit Ac Nisl"
+        "properties": {
+          "applicationSuite": {
+            "name": "Vivamus Aliquet Elit Ac Nisl"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "proces"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "proces"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Vivamus Aliquet Elit Ac Nisl",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "beta",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Groningen",
-              "repoOwner": "Gemeente Groningen",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Vivamus Aliquet Elit Ac Nisl",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "beta",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Groningen",
+            "repoOwner": "Gemeente Groningen",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Vivamus Aliquet Elit Ac Nisl",
-            "platforms": ["windows", "linux", "android", "ios"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Vivamus Aliquet Elit Ac Nisl",
+          "platforms": ["windows", "linux", "android", "ios"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/iot",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Metus"
+        "properties": {
+          "applicationSuite": {
+            "name": "Metus"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "data"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "data"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Metus",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "beta",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Groningen",
-              "repoOwner": "Gemeente Groningen",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Metus",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "beta",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Groningen",
+            "repoOwner": "Gemeente Groningen",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Metus",
-            "platforms": ["web", "linux"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Metus",
+          "platforms": ["web", "linux"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/desktop",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Nonummy Id"
+        "properties": {
+          "applicationSuite": {
+            "name": "Nonummy Id"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "integratie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "integratie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Nonummy Id",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gewenst",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Groningen",
-              "repoOwner": "Gemeente Groningen",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Nonummy Id",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gewenst",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Groningen",
+            "repoOwner": "Gemeente Groningen",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Nonummy Id",
-            "platforms": ["web", "windows", "mac", "linux", "ios", "android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Nonummy Id",
+          "platforms": ["web", "windows", "mac", "linux", "ios", "android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/web",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor"
+        "properties": {
+          "applicationSuite": {
+            "name": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "services"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "services"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "bruikbaar",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Groningen",
-              "repoOwner": "Gemeente Groningen",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "bruikbaar",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Groningen",
+            "repoOwner": "Gemeente Groningen",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor",
-            "platforms": ["android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Lacus Ante Convallis Tellus Vitae Iaculis Lacus Elit Id Tortor",
+          "platforms": ["android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/backend",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Pellentesque Ut Neque Ligula"
+        "properties": {
+          "applicationSuite": {
+            "name": "Pellentesque Ut Neque Ligula"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "proces"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "proces"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Pellentesque Ut Neque Ligula",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gewenst",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Almere",
-              "repoOwner": "Gemeente Almere",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Pellentesque Ut Neque Ligula",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gewenst",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Almere",
+            "repoOwner": "Gemeente Almere",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Pellentesque Ut Neque Ligula",
-            "platforms": ["ios"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Pellentesque Ut Neque Ligula",
+          "platforms": ["ios"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "standalone/other",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Amet Ultrices"
+        "properties": {
+          "applicationSuite": {
+            "name": "Amet Ultrices"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "proces"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "proces"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Amet Ultrices",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "geplant",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Almere",
-              "repoOwner": "Gemeente Almere",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Amet Ultrices",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "geplant",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Almere",
+            "repoOwner": "Gemeente Almere",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Amet Ultrices",
-            "platforms": ["linux"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "landelijke voorziening",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Amet Ultrices",
+          "platforms": ["linux"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "softwareAddon",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Nunc Sed Turpis"
+        "properties": {
+          "applicationSuite": {
+            "name": "Nunc Sed Turpis"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "services"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "services"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Nunc Sed Turpis",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "uitgefasseerd",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Almere",
-              "repoOwner": "Gemeente Almere",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Nunc Sed Turpis",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "uitgefasseerd",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Almere",
+            "repoOwner": "Gemeente Almere",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Nunc Sed Turpis",
-            "platforms": ["web"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Nunc Sed Turpis",
+          "platforms": ["web"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "library",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Convallis Metus Id"
+        "properties": {
+          "applicationSuite": {
+            "name": "Convallis Metus Id"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Convallis Metus Id",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "uitgefasseerd",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Waterland",
-              "repoOwner": "Gemeente Waterland",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "internal",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Convallis Metus Id",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "uitgefasseerd",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Waterland",
+            "repoOwner": "Gemeente Waterland",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "internal",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Convallis Metus Id",
-            "platforms": ["windows"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "standalone/web",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Convallis Metus Id",
+          "platforms": ["windows"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "configurationFiles",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Semper A Sagittis Ne"
+        "properties": {
+          "applicationSuite": {
+            "name": "Semper A Sagittis Ne"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Semper A Sagittis Ne",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "uitgefasseerd",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Waterland",
-              "repoOwner": "Gemeente Waterland",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Semper A Sagittis Ne",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "uitgefasseerd",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Waterland",
+            "repoOwner": "Gemeente Waterland",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Semper A Sagittis Ne",
-            "platforms": ["windows", "linux"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Semper A Sagittis Ne",
+          "platforms": ["windows", "linux"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "api",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Suspendisse"
+        "properties": {
+          "applicationSuite": {
+            "name": "Suspendisse"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Suspendisse",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "bruikbaar",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Waterland",
-              "repoOwner": "Gemeente Waterland",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "contract",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Suspendisse",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "bruikbaar",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Waterland",
+            "repoOwner": "Gemeente Waterland",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "contract",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Suspendisse",
-            "platforms": ["ios", "mac", "android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Suspendisse",
+          "platforms": ["ios", "mac", "android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "schema",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       },
       {
-         "properties": {
-            "applicationSuite": {
-              "name": "Nisl Quis Enim Dignissim"
+        "properties": {
+          "applicationSuite": {
+            "name": "Nisl Quis Enim Dignissim"
+          },
+          "nl": {
+            "commonground": {
+              "intendedOrganizations": ["Conduction"],
+              "installationType": "helm",
+              "layerType": "interactie"
             },
-            "nl": {
-              "commonground": {
-                "intendedOrganizations": ["Conduction"],
-                "installationType": "helm",
-                "layerType": "interactie"
-              },
-              "gemma": {
-                "bedrijfsfuncties": ["string"],
-                "bedrijfsservices": ["string"],
-                "applicatiefunctie": "string",
-                "referentieComponenten": ["test"]
-              },
-              "upl": ["UniformeProductnaam"],
-              "apm": {}
-            },  
-            "categories": [
-              "Acounting"
-            ],
-            "dependsOn": {
-              "open": [
-                {}
-              ],
-              "proprietary": [
-                {}
-              ],
-              "hardware": [
-                {}
-              ]
+            "gemma": {
+              "bedrijfsfuncties": ["string"],
+              "bedrijfsservices": ["string"],
+              "applicatiefunctie": "string",
+              "referentieComponenten": ["test"]
             },
-            "description": {
-              "localisedName": "Nisl Quis Enim Dignissim",
-              "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-              "longDescription": "This component is based on the following schema.org sources: Address Person",
-              "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
-              "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
-              "features": ["API"],
-              "screenshots": ["example.com"],
-              "videos": ["example.com"],
-              "awards": ["example.com"]
-            },
-            "developmentStatus": "gewenst",
-            "intendedAudience": {
-                "countries": [
-                    "nl"
-                  ],
-                "unsupportedCountries": [
-                    "de"
-                ],
-                "scope": [
-                    "agriculture",
-                    "culture"
-                ]
-            },
-            "isBasedOn": "https://github.com/ConductionNL/adresservice",
-            "landingURL": "https://github.com/ConductionNL/adresservice",
-            "legal": {
-              "license": "EUPL-1.0-or-later",
-              "mainCopyrightOwner": "Gemeente Hillegom",
-              "repoOwner": "Gemeente Hillegom",
-              "authorsFile": "doc/AUTHORS.txt"
-            },
-            "localisation": {
-              "localisationReady": true,
-              "availableLanguages": ["en", "nl"]
-            },
-            "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
-            "maintenance": {
-              "type": "community",
-              "contractors": [{
+            "upl": ["UniformeProductnaam"],
+            "apm": {}
+          },
+          "categories": ["Acounting"],
+          "dependsOn": {
+            "open": [{}],
+            "proprietary": [{}],
+            "hardware": [{}]
+          },
+          "description": {
+            "localisedName": "Nisl Quis Enim Dignissim",
+            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
+            "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
+            "features": ["API"],
+            "screenshots": ["example.com"],
+            "videos": ["example.com"],
+            "awards": ["example.com"]
+          },
+          "developmentStatus": "gewenst",
+          "intendedAudience": {
+            "countries": ["nl"],
+            "unsupportedCountries": ["de"],
+            "scope": ["agriculture", "culture"]
+          },
+          "isBasedOn": "https://github.com/ConductionNL/adresservice",
+          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "legal": {
+            "license": "EUPL-1.0-or-later",
+            "mainCopyrightOwner": "Gemeente Hillegom",
+            "repoOwner": "Gemeente Hillegom",
+            "authorsFile": "doc/AUTHORS.txt"
+          },
+          "localisation": {
+            "localisationReady": true,
+            "availableLanguages": ["en", "nl"]
+          },
+          "logo": "https://avatars0.githubusercontent.com/u/34739001?s=280&v=4",
+          "maintenance": {
+            "type": "community",
+            "contractors": [
+              {
                 "name": "Conduction",
                 "until": "2022-07-22",
                 "email": "johndoe@example.com",
                 "website": "http://localhost",
                 "phone": "+31612345678"
-              }],
-              "contacts": [{
+              }
+            ],
+            "contacts": [
+              {
                 "name": "Conduction",
                 "email": "johndoe@example.com",
                 "phone": "+31612345678",
                 "affiliation": "CommonGround"
-              }] 
-            },
-            "name": "Nisl Quis Enim Dignissim",
-            "platforms": ["web", "android"],
-            "releaseDate": "2020-02-18T10:37:28.710861Z",
-            "roadmap": "https://vng.nl/agenda",
-            "softwareType": "zelf installeren",
-            "softwareVersion": "1.0",
-            "installationType": "self",
-            "url": "https://github.com/ConductionNL/adresservice",
-            "usedBy": [
-              "City of Amsterdam"
-            ],
-            "inputTypes": ["string"],
-            "outputTypes": ["string"]
-         }
+              }
+            ]
+          },
+          "name": "Nisl Quis Enim Dignissim",
+          "platforms": ["web", "android"],
+          "releaseDate": "2020-02-18T10:37:28.710861Z",
+          "roadmap": "https://vng.nl/agenda",
+          "softwareType": "data",
+          "softwareVersion": "1.0",
+          "installationType": "self",
+          "url": "https://github.com/ConductionNL/adresservice",
+          "usedBy": ["City of Amsterdam"],
+          "inputTypes": ["string"],
+          "outputTypes": ["string"]
+        }
       }
     ]
   }
