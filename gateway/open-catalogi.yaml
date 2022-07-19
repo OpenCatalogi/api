@@ -1,0 +1,572 @@
+App\Entity\CollectionEntity:
+    opencatalogiCollection:
+      name: OpenCatalogi collection
+      sourceType: GitHub
+      locationOAS: https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml
+      testDataLocation: https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json
+      loadTestData: true
+      autoLoad: true
+
+App\Entity\Entity:
+    license:
+      name: License
+      description: License GEMMA
+      route: "/license"
+      endpoint: "license"
+
+    referentieComponent:
+      name: ReferentieComponent
+      description: ReferentieComponent GEMMA
+      route: "/referentie_components"
+      endpoint: "referentie_components"
+
+    bedrijfsservice:
+      name: Bedrijfsservice
+      description: Bedrijfsservice GEMMA
+      route: "/bedrijfsservices"
+      endpoint: "bedrijfsservices"
+
+    bedrijfsfunctie:
+      name: Bedrijfsfunctie
+      description: Bedrijfsfunctie GEMMA
+      route: "/bedrijfsfuncties"
+      endpoint: "bedrijfsfunctie"
+
+    applicatiefunctie:
+      name: Applicatiefunctie
+      description: Applicatiefunctie GEMMA
+      route: "/applicatiefuncties"
+      endpoint: "applicatiefuncties"
+
+App\Entity\Attribute:
+    license_url:
+      name: url
+      description: Url for this license
+      type: string
+      function: self 
+      readOnly: true
+      searchable: true
+      entity: "@license"
+    license_name:
+      name: name
+      description: Name for this license
+      type: string
+      required: true
+      searchable: true
+      entity: "@license"
+    license_omschrijving:
+      name: omschrijving
+      description: Omschrijving for this license
+      type: string
+      searchable: true
+      entity: "@license"
+    license_toelichting:
+      name: toelichting
+      description: Toelichting for this license
+      type: string 
+      searchable: true
+      entity: "@license"
+      
+    referentieComponent_url:
+      name: url
+      description: Url for this referentieComponent
+      type: string
+      function: self 
+      readOnly: true
+      searchable: true
+      entity: "@referentieComponent"
+    referentieComponent_name:
+      name: name
+      description: Name for this referentieComponent
+      type: string
+      required: true
+      searchable: true
+      entity: "@referentieComponent"
+    referentieComponent_omschrijving:
+      name: omschrijving
+      description: Omschrijving for this referentieComponent
+      type: string
+      searchable: true
+      entity: "@referentieComponent"
+    referentieComponent_toelichting:
+      name: toelichting
+      description: Toelichting for this referentieComponent
+      type: string 
+      searchable: true
+      entity: "@referentieComponent"
+      
+    bedrijfsservice_url:
+      name: url
+      description: Url for this bedrijfsservice
+      type: string
+      function: self 
+      readOnly: true
+      searchable: true
+      entity: "@bedrijfsservice"
+    bedrijfsservice_name:
+      name: name
+      description: Name for this bedrijfsservice
+      type: string
+      required: true
+      searchable: true
+      entity: "@bedrijfsservice"
+    bedrijfsservice_omschrijving:
+      name: omschrijving
+      description: Omschrijving for this bedrijfsservice
+      type: string
+      searchable: true
+      entity: "@bedrijfsservice"
+    bedrijfsservice_toelichting:
+      name: toelichting
+      description: Toelichting for this bedrijfsservice
+      type: string 
+      searchable: true
+      entity: "@bedrijfsservice"
+      
+    bedrijfsfunctie_url:
+      name: url
+      description: Url for this bedrijfsfunctie
+      type: string
+      function: self 
+      readOnly: true
+      searchable: true
+      entity: "@bedrijfsfunctie"
+    bedrijfsfunctie_name:
+      name: name
+      description: Name for this bedrijfsfunctie
+      type: string
+      required: true
+      searchable: true
+      entity: "@bedrijfsfunctie"
+    bedrijfsfunctie_omschrijving:
+      name: omschrijving
+      description: Omschrijving for this bedrijfsfunctie
+      type: string
+      searchable: true
+      entity: "@bedrijfsfunctie"
+    bedrijfsfunctie_toelichting:
+      name: toelichting
+      description: Toelichting for this bedrijfsfunctie
+      type: string 
+      searchable: true
+      entity: "@bedrijfsfunctie"
+      
+    applicatiefunctie_url:
+      name: url
+      description: Url for this applicatiefunctie
+      type: string
+      function: self 
+      readOnly: true
+      searchable: true
+      entity: "@applicatiefunctie"
+    applicatiefunctie_name:
+      name: name
+      description: Name for this applicatiefunctie
+      type: string
+      required: true
+      searchable: true
+      entity: "@applicatiefunctie"
+    applicatiefunctie_omschrijving:
+      name: omschrijving
+      description: Omschrijving for this applicatiefunctie
+      type: string
+      searchable: true
+      entity: "@applicatiefunctie"
+    applicatiefunctie_toelichting:
+      name: toelichting
+      description: Toelichting for this applicatiefunctie
+      type: string 
+      searchable: true
+      entity: "@applicatiefunctie"
+
+parameters:
+   licenseItemRegex: "^v1/referentielijsten/licenses/[a-z0-9-]{36}$"
+   referentieComponentItemRegex: "^v1/referentielijsten/referentie_components/[a-z0-9-]{36}$"
+   bedrijfsserviceItemRegex: "^v1/referentielijsten/bedrijfsservices/[a-z0-9-]{36}$"
+   bedrijfsfunctieItemRegex: "^v1/referentielijsten/bedrijfsfuncties/[a-z0-9-]{36}$"
+   applicatiefunctieItemRegex: "^v1/referentielijsten/applicatiefuncties/[a-z0-9-]{36}$"
+
+App\Entity\Endpoint:
+   licenseEndpointGet:
+       name: License endpoint get collection
+       description: endpoint for licenses
+       path: [ 'v1', 'referentielijsten', 'licenses' ]
+       pathRegex: "^(v1/referentielijsten/licenses)$"
+       method: GET
+       operationType: collection
+
+   licenseEndpointPost:
+       name: License endpoint post
+       description: endpoint for licenses
+       path: [ 'v1', 'referentielijsten', 'licenses' ]
+       pathRegex: "^(v1/referentielijsten/licenses)$"
+       method: POST
+       operationType: collection
+
+   licenseEndpointGetItem:
+       name: License endpoint get item
+       description: endpoint for licenses
+       path: [ 'v1', 'referentielijsten', 'licenses', '{id}' ]
+       pathRegex: <{licenseItemRegex}>
+       method: GET
+       operationType: item
+
+   licenseEndpointPut:
+       name: License endpoint put
+       description: endpoint for licenses
+       path: [ 'v1', 'referentielijsten', 'licenses', '{id}' ]
+       pathRegex: <{licenseItemRegex}>
+       method: PUT
+       operationType: item
+
+   licenseEndpointDelete:
+       name: License endpoint delete
+       description: endpoint for licenses
+       path: [ 'v1', 'referentielijsten', 'licenses', '{id}' ]
+       pathRegex: <{licenseItemRegex}>
+       method: DELETE
+       operationType: item
+
+   referentieComponentEndpointGet:
+       name: License endpoint get collection
+       description: endpoint for referentieComponents
+       path: [ 'v1', 'referentielijsten', 'referentie_components' ]
+       pathRegex: "^(v1/referentielijsten/referentie_components)$"
+       method: GET
+       operationType: collection
+
+   referentieComponentEndpointPost:
+       name: License endpoint post
+       description: endpoint for referentieComponents
+       path: [ 'v1', 'referentielijsten', 'referentie_components' ]
+       pathRegex: "^(v1/referentielijsten/referentie_components)$"
+       method: POST
+       operationType: collection
+
+   referentieComponentEndpointGetItem:
+       name: License endpoint get item
+       description: endpoint for referentieComponents
+       path: [ 'v1', 'referentielijsten', 'referentie_components', '{id}' ]
+       pathRegex: <{referentieComponentItemRegex}>
+       method: GET
+       operationType: item
+
+   referentieComponentEndpointPut:
+       name: License endpoint put
+       description: endpoint for referentieComponents
+       path: [ 'v1', 'referentielijsten', 'referentie_components', '{id}' ]
+       pathRegex: <{referentieComponentItemRegex}>
+       method: PUT
+       operationType: item
+
+   referentieComponentEndpointDelete:
+       name: License endpoint delete
+       description: endpoint for referentieComponents
+       path: [ 'v1', 'referentielijsten', 'referentie_components', '{id}' ]
+       pathRegex: <{referentieComponentItemRegex}>
+       method: DELETE
+       operationType: item
+
+   bedrijfsserviceEndpointGet:
+       name: License endpoint get collection
+       description: endpoint for bedrijfsservices
+       path: [ 'v1', 'referentielijsten', 'bedrijfsservices' ]
+       pathRegex: "^(v1/referentielijsten/bedrijfsservices)$"
+       method: GET
+       operationType: collection
+
+   bedrijfsserviceEndpointPost:
+       name: License endpoint post
+       description: endpoint for bedrijfsservices
+       path: [ 'v1', 'referentielijsten', 'bedrijfsservices' ]
+       pathRegex: "^(v1/referentielijsten/bedrijfsservices)$"
+       method: POST
+       operationType: collection
+
+   bedrijfsserviceEndpointGetItem:
+       name: License endpoint get item
+       description: endpoint for bedrijfsservices
+       path: [ 'v1', 'referentielijsten', 'bedrijfsservices', '{id}' ]
+       pathRegex: <{bedrijfsserviceItemRegex}>
+       method: GET
+       operationType: item
+
+   bedrijfsserviceEndpointPut:
+       name: License endpoint put
+       description: endpoint for bedrijfsservices
+       path: [ 'v1', 'referentielijsten', 'bedrijfsservices', '{id}' ]
+       pathRegex: <{bedrijfsserviceItemRegex}>
+       method: PUT
+       operationType: item
+
+   bedrijfsserviceEndpointDelete:
+       name: License endpoint delete
+       description: endpoint for bedrijfsservices
+       path: [ 'v1', 'referentielijsten', 'bedrijfsservices', '{id}' ]
+       pathRegex: <{bedrijfsserviceItemRegex}>
+       method: DELETE
+       operationType: item
+
+   bedrijfsfunctieEndpointGet:
+       name: License endpoint get collection
+       description: endpoint for bedrijfsfuncties
+       path: [ 'v1', 'referentielijsten', 'bedrijfsfuncties' ]
+       pathRegex: "^(v1/referentielijsten/bedrijfsfuncties)$"
+       method: GET
+       operationType: collection
+
+   bedrijfsfunctieEndpointPost:
+       name: License endpoint post
+       description: endpoint for bedrijfsfuncties
+       path: [ 'v1', 'referentielijsten', 'bedrijfsfuncties' ]
+       pathRegex: "^(v1/referentielijsten/bedrijfsfuncties)$"
+       method: POST
+       operationType: collection
+
+   bedrijfsfunctieEndpointGetItem:
+       name: License endpoint get item
+       description: endpoint for bedrijfsfuncties
+       path: [ 'v1', 'referentielijsten', 'bedrijfsfuncties', '{id}' ]
+       pathRegex: <{bedrijfsfunctieItemRegex}>
+       method: GET
+       operationType: item
+
+   bedrijfsfunctieEndpointPut:
+       name: License endpoint put
+       description: endpoint for bedrijfsfuncties
+       path: [ 'v1', 'referentielijsten', 'bedrijfsfuncties', '{id}' ]
+       pathRegex: <{bedrijfsfunctieItemRegex}>
+       method: PUT
+       operationType: item
+
+   bedrijfsfunctieEndpointDelete:
+       name: License endpoint delete
+       description: endpoint for bedrijfsfuncties
+       path: [ 'v1', 'referentielijsten', 'bedrijfsfuncties', '{id}' ]
+       pathRegex: <{bedrijfsfunctieItemRegex}>
+       method: DELETE
+       operationType: item
+
+   applicatiefunctieEndpointGet:
+       name: License endpoint get collection
+       description: endpoint for applicatiefuncties
+       path: [ 'v1', 'referentielijsten', 'applicatiefuncties' ]
+       pathRegex: "^(v1/referentielijsten/applicatiefuncties)$"
+       method: GET
+       operationType: collection
+
+   applicatiefunctieEndpointPost:
+       name: License endpoint post
+       description: endpoint for applicatiefuncties
+       path: [ 'v1', 'referentielijsten', 'applicatiefuncties' ]
+       pathRegex: "^(v1/referentielijsten/applicatiefuncties)$"
+       method: POST
+       operationType: collection
+
+   applicatiefunctieEndpointGetItem:
+       name: License endpoint get item
+       description: endpoint for applicatiefuncties
+       path: [ 'v1', 'referentielijsten', 'applicatiefuncties', '{id}' ]
+       pathRegex: <{applicatiefunctieItemRegex}>
+       method: GET
+       operationType: item
+
+   applicatiefunctieEndpointPut:
+       name: License endpoint put
+       description: endpoint for applicatiefuncties
+       path: [ 'v1', 'referentielijsten', 'applicatiefuncties', '{id}' ]
+       pathRegex: <{applicatiefunctieItemRegex}>
+       method: PUT
+       operationType: item
+
+   applicatiefunctieEndpointDelete:
+       name: License endpoint delete
+       description: endpoint for applicatiefuncties
+       path: [ 'v1', 'referentielijsten', 'applicatiefuncties', '{id}' ]
+       pathRegex: <{applicatiefunctieItemRegex}>
+       method: DELETE
+       operationType: item
+
+App\Entity\Handler:
+    licenseHandler:
+      name: License handler
+      methods: ["*"]
+      sequence: 0
+      conditions: "{}"
+      endpoints: ["@licenseEndpointGet", "@licenseEndpointPost", "@licenseEndpointGetItem", "@licenseEndpointPut", "@licenseEndpointDelete"]
+      entity: "@license"
+
+    bedrijfsserviceHandler:
+      name: License handler
+      methods: ["*"]
+      sequence: 0
+      conditions: "{}"
+      endpoints: ["@bedrijfsserviceEndpointGet", "@bedrijfsserviceEndpointPost", "@bedrijfsserviceEndpointGetItem", "@bedrijfsserviceEndpointPut", "@bedrijfsserviceEndpointDelete"]
+      entity: "@bedrijfsservice"
+
+    bedrijfsfunctieHandler:
+      name: License handler
+      methods: ["*"]
+      sequence: 0
+      conditions: "{}"
+      endpoints: ["@bedrijfsfunctieEndpointGet", "@bedrijfsfunctieEndpointPost", "@bedrijfsfunctieEndpointGetItem", "@bedrijfsfunctieEndpointPut", "@bedrijfsfunctieEndpointDelete"]
+      entity: "@bedrijfsfunctie"
+
+    applicatiefunctieHandler:
+      name: License handler
+      methods: ["*"]
+      sequence: 0
+      conditions: "{}"
+      endpoints: ["@applicatiefunctieEndpointGet", "@applicatiefunctieEndpointPost", "@applicatiefunctieEndpointGetItem", "@applicatiefunctieEndpointPut", "@applicatiefunctieEndpointDelete"]
+      entity: "@applicatiefunctie"
+
+    referentieComponentHandler:
+      name: License handler
+      methods: ["*"]
+      sequence: 0
+      conditions: "{}"
+      endpoints: ["@referentieComponentEndpointGet", "@referentieComponentEndpointPost", "@referentieComponentEndpointGetItem", "@referentieComponentEndpointPut", "@referentieComponentEndpointDelete"]
+      entity: "@referentieComponent"
+
+App\Entity\ObjectEntity:
+    license1:
+        entity: "@license"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+    license2:
+        entity: "@license"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+
+    referentieComponent1:
+        entity: "@referentieComponent"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+    referentieComponent2:
+        entity: "@referentieComponent"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+
+    bedrijfsservice1:
+        entity: "@bedrijfsservice"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+    bedrijfsservice2:
+        entity: "@bedrijfsservice"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+
+    bedrijfsfunctie1:
+        entity: "@bedrijfsfunctie"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+    bedrijfsfunctie2:
+        entity: "@bedrijfsfunctie"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+
+    applicatiefunctie1:
+        entity: "@applicatiefunctie"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+    applicatiefunctie2:
+        entity: "@applicatiefunctie"
+        organization: "http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761"
+        owner: "2ac800cc-b844-458d-87e1-b206fa80113a"
+
+        
+App\Entity\Value:
+    license1_name:
+        attribute: "@license_name"
+        stringValue: Creative Commons Attribution Share Alike 2.1 Japan
+        objectEntity: "@license1"
+    license1_toelichting:
+        attribute: "@license_toelichting"
+        stringValue: CC-BY-SA-2.1-JP
+        objectEntity: "@license1"
+
+    license2_name:
+        attribute: "@license_name"
+        stringValue: GNU General Public License v2.0 or later
+        objectEntity: "@license2"
+    license2_toelichting:
+        attribute: "@license_toelichting"
+        stringValue: GPL-2.0-or-later
+        objectEntity: "@license2"
+
+
+    referentieComponent1_name:
+        attribute: "@referentieComponent_name"
+        stringValue: Aanwezigheid- en toegangscontrolecomponent
+        objectEntity: "@referentieComponent1"
+    referentieComponent1_toelichting:
+        attribute: "@referentieComponent_toelichting"
+        stringValue: Component waarmee gecontroleerd kan worden wie, wanneer toegang krijgt tot locaties, gebouwen en ruimtes.
+        objectEntity: "@referentieComponent1"
+
+    referentieComponent2_name:
+        attribute: "@referentieComponent_name"
+        stringValue: Accommodatiebeheercomponent
+        objectEntity: "@referentieComponent2"
+    referentieComponent2_toelichting:
+        attribute: "@referentieComponent_toelichting"
+        stringValue: Component voor het beheren van accommodaties
+        objectEntity: "@referentieComponent2"
+
+
+    bedrijfsservice1_name:
+        attribute: "@bedrijfsservice_name"
+        stringValue: Aanvraag advies
+        objectEntity: "@bedrijfsservice1"
+    bedrijfsservice1_toelichting:
+        attribute: "@bedrijfsservice_toelichting"
+        stringValue: Aanvraag advies
+        objectEntity: "@bedrijfsservice1"
+
+    bedrijfsservice2_name:
+        attribute: "@bedrijfsservice_name"
+        stringValue: Bedrijfsservice Vergunningverlening
+        objectEntity: "@bedrijfsservice2"
+    bedrijfsservice2_toelichting:
+        attribute: "@bedrijfsservice_toelichting"
+        stringValue: Bedrijfsservice Vergunningverlening
+        objectEntity: "@bedrijfsservice2"
+
+
+    bedrijfsfunctie1_name:
+        attribute: "@bedrijfsfunctie_name"
+        stringValue: Algemene content publicatie 
+        objectEntity: "@bedrijfsfunctie1"
+    bedrijfsfunctie1_toelichting:
+        attribute: "@bedrijfsfunctie_toelichting"
+        stringValue: Algemene content publicatie 
+        objectEntity: "@bedrijfsfunctie1"
+
+    bedrijfsfunctie2_name:
+        attribute: "@bedrijfsfunctie_name"
+        stringValue: Aanbesteding
+        objectEntity: "@bedrijfsfunctie2"
+    bedrijfsfunctie2_toelichting:
+        attribute: "@bedrijfsfunctie_toelichting"
+        stringValue: Aanbesteding
+        objectEntity: "@bedrijfsfunctie2"
+
+
+    applicatiefunctie1_name:
+        attribute: "@applicatiefunctie_name"
+        stringValue: Algemene content publicatie 
+        objectEntity: "@applicatiefunctie1"
+    applicatiefunctie1_toelichting:
+        attribute: "@applicatiefunctie_toelichting"
+        stringValue: Algemene content publicatie 
+        objectEntity: "@applicatiefunctie1"
+
+    applicatiefunctie2_name:
+        attribute: "@applicatiefunctie_name"
+        stringValue: Aanbesteding
+        objectEntity: "@applicatiefunctie2"
+    applicatiefunctie2_toelichting:
+        attribute: "@applicatiefunctie_toelichting"
+        stringValue: Aanbesteding
+        objectEntity: "@applicatiefunctie2"
+
