@@ -553,6 +553,28 @@ App\Entity\Handler:
         endpoints: ["@referentieComponentEndpointGet", "@referentieComponentEndpointPost", "@referentieComponentEndpointGetItem", "@referentieComponentEndpointPut", "@referentieComponentEndpointDelete"]
         entity: "@referentieComponent"
 
+App\Entity\Translation:
+   standaloneWebTranslation:
+       translationTable: componentTable
+       translateFrom: standalone/web
+       translateTo: application
+       language: en
+   standaloneMobileTranslation:
+       translationTable: componentTable
+       translateFrom: standalone/mobile
+       translateTo: application
+       language: en
+   dataModelTranslation:
+       translationTable: componentTable
+       translateFrom: schema
+       translateTo: data_model
+       language: en
+   processTranslation:
+       translationTable: componentTable
+       translateFrom: process
+       translateTo: proces
+       language: en
+
 
 ###########################
 ## ------ Fixtures ------ #
@@ -700,4 +722,3 @@ App\Entity\Value:
         attribute: "@applicatiefunctie_toelichting"
         stringValue: Aanbesteding
         objectEntity: "@applicatiefunctie2"
-
