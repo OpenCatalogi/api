@@ -2,6 +2,22 @@
   "openapi": "3.0.0",
   "collection": "https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml",
   "schemas": {
+    "Organisation": [
+      {
+        "properties": {
+          "id": "4e10fcc4-f7d3-4f66-87f5-76b5d468f539",
+          "name": "City of Amsterdam",
+          "description": "string",
+          "logo": "http://example.com",
+          "token": "string",
+          "github": "string",
+          "gitlab": "string",
+          "website": "string",
+          "phone": "string",
+          "email": "string"
+        }
+      }
+    ],
     "Component": [
       {
         "properties": {
@@ -87,17 +103,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -186,17 +192,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -285,17 +281,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -384,17 +370,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -483,17 +459,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -582,17 +548,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -681,17 +637,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -780,17 +726,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -879,17 +815,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -978,17 +904,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1077,17 +993,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1176,17 +1082,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1275,17 +1171,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1374,17 +1260,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1473,17 +1349,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1572,17 +1438,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1671,17 +1527,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1770,17 +1616,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1869,17 +1705,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -1968,17 +1794,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -2067,17 +1883,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -2166,17 +1972,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -2265,17 +2061,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -2364,17 +2150,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -2463,17 +2239,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
@@ -2562,17 +2328,7 @@
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/ConductionNL/adresservice",
-          "usedBy": [{
-            "name": "City of Amsterdam",
-            "description": "string",
-            "logo": "http://example.com",
-            "token": "string",
-            "github": "string",
-            "gitlab": "string",
-            "website": "string",
-            "phone": "string",
-            "email": "string"
-          }],
+          "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
         }
