@@ -80,6 +80,13 @@ App\Entity\Entity:
       route: "/applicatiefuncties"
       endpoint: "applicatiefuncties"
 
+    # Organization Entity
+    organizationfunctie:
+      name: Organization
+      description: Organization entity
+      route: "/publiccode/organizations"
+      endpoint: "publiccode/organizations"
+
 # Attributes
 App\Entity\Attribute:
     # UPL Attributes
@@ -240,6 +247,15 @@ App\Entity\Attribute:
         searchable: true
         entity: "@applicatiefunctie"
 
+    
+    # Organization Attributes
+    organization_name:
+        name: name
+        mustBeUnique: true
+        description: Name for publiccode organization
+        searchable: true
+        entity: "@organization"
+
 # Parameters for endpoint regex
 parameters:
     uplItemRegex: '^v1/referentielijsten/upl/[a-z0-9-]{36}$'
@@ -248,6 +264,7 @@ parameters:
     bedrijfsserviceItemRegex: "^v1/referentielijsten/bedrijfsservices/[a-z0-9-]{36}$"
     bedrijfsfunctieItemRegex: "^v1/referentielijsten/bedrijfsfuncties/[a-z0-9-]{36}$"
     applicatiefunctieItemRegex: "^v1/referentielijsten/applicatiefuncties/[a-z0-9-]{36}$"
+    organizationItemRegex: "^publiccode/organizations/[a-z0-9-]{36}$"
 
 # Endpoints
 App\Entity\Endpoint:
@@ -497,6 +514,48 @@ App\Entity\Endpoint:
         method: DELETE
         operationType: item
 
+
+    # Organization Endpoints
+    organizationEndpointGet:
+        name: Organization endpoint get collection
+        description: endpoint for organizations
+        path: ['publiccode', 'organizations' ]
+        pathRegex: "^(publiccode/organizations)$"
+        method: GET
+        operationType: collection
+
+    organizationEndpointPost:
+        name: Organization endpoint post
+        description: endpoint for Organizations
+        path: [ 'publiccode', 'organizations' ]
+        pathRegex: "^(publiccode/organizations)$"
+        method: POST
+        operationType: collection
+
+    organizationEndpointGetItem:
+        name: Organization endpoint get item
+        description: endpoint for Organizations
+        path: [ 'publiccode', 'organizations', '{id}' ]
+        pathRegex: <{organizationItemRegex}>
+        method: GET
+        operationType: item
+
+    organizationEndpointPut:
+        name: Organization endpoint put
+        description: endpoint for organizations
+        path: [ 'publiccode', 'organizations', '{id}' ]
+        pathRegex: <{organizationItemRegex}>
+        method: PUT
+        operationType: item
+
+    organizationEndpointDelete:
+        name: Organization endpoint delete
+        description: endpoint for organizations
+        path: [ 'publiccode', 'organizations', '{id}' ]
+        pathRegex: <{organizationItemRegex}>
+        method: DELETE
+        operationType: item
+
 # Handlers
 App\Entity\Handler:
     # UPL Handler
@@ -553,27 +612,14 @@ App\Entity\Handler:
         endpoints: ["@referentieComponentEndpointGet", "@referentieComponentEndpointPost", "@referentieComponentEndpointGetItem", "@referentieComponentEndpointPut", "@referentieComponentEndpointDelete"]
         entity: "@referentieComponent"
 
-App\Entity\Translation:
-   standaloneWebTranslation:
-       translationTable: componentTable
-       translateFrom: standalone/web
-       translateTo: application
-       language: en
-   standaloneMobileTranslation:
-       translationTable: componentTable
-       translateFrom: standalone/mobile
-       translateTo: application
-       language: en
-   dataModelTranslation:
-       translationTable: componentTable
-       translateFrom: schema
-       translateTo: data_model
-       language: en
-   processTranslation:
-       translationTable: componentTable
-       translateFrom: process
-       translateTo: proces
-       language: en
+    # Organization Handler
+    organizationHandler:
+        name: Organization handler
+        methods: ["*"]
+        sequence: 0
+        conditions: "{}"
+        endpoints: ["@organizationEndpointGet", "@organizationEndpointPost", "@organizationEndpointGetItem", "@organizationEndpointPut", "@organizationEndpointDelete"]
+        entity: "@organization"
 
 
 ###########################
