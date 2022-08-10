@@ -33,7 +33,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
@@ -122,7 +122,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
@@ -211,7 +211,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
@@ -300,7 +300,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
@@ -389,7 +389,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Werkproces",
               "referentieComponenten": ["test"]
             },
             "upl": ["Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
@@ -478,7 +478,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Beheren grootboek",
               "referentieComponenten": ["test"]
             },
             "upl": ["Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
@@ -567,7 +567,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Beheren grootboek",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
@@ -656,7 +656,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Beheren grootboek",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
@@ -745,7 +745,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
@@ -834,7 +834,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)"],
@@ -923,7 +923,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
@@ -1012,7 +1012,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)" ],
@@ -1101,7 +1101,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanbieden informatieobjecten als download",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
@@ -1190,7 +1190,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Beheren grootboek",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)" ],
@@ -1279,7 +1279,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Werkproces",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
@@ -1368,7 +1368,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Ontsluiten van kennis",
               "referentieComponenten": ["test"]
             },
             "upl": ["Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
@@ -1457,7 +1457,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)"],
@@ -1546,7 +1546,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)"],
@@ -1635,7 +1635,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Gasaansluitingsverzoek (Artikel 44 Gaswet)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)" ],
@@ -1724,7 +1724,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)" ],
@@ -1813,7 +1813,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Werkproces",
               "referentieComponenten": ["test"]
             },
             "upl": ["Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)"],
@@ -1902,7 +1902,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Privacy",
               "referentieComponenten": ["test"]
             },
             "upl": ["Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)", "Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
@@ -1991,7 +1991,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Ontsluiten van kennis",
               "referentieComponenten": ["test"]
             },
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)" ],
@@ -2080,7 +2080,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Beheren grootboek",
               "referentieComponenten": ["test"]
             },
             "upl": ["Gasaansluitingsverzoek (Artikel 44 Gaswet)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
@@ -2169,7 +2169,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanleveren van areaalgegevens voor wegbeheer",
               "referentieComponenten": ["test"]
             },
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
@@ -2258,7 +2258,7 @@
             "gemma": {
               "bedrijfsfuncties": ["string"],
               "bedrijfsservices": ["string"],
-              "applicatiefunctie": "string",
+              "applicatiefunctie": "Aanbieden informatieobjecten als download",
               "referentieComponenten": ["test"]
             },
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)" ],
