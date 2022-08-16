@@ -842,7 +842,7 @@ components:
         last_change:
           type: string
         stars:
-          type: string
+          type: number
         fork_count:
           type: number
         issue_open_count:
