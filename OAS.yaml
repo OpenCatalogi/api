@@ -342,6 +342,9 @@ components:
             - beta
             - stable
             - obsolete
+            - interactie
+            - gepland
+            - bruikbaar
           example: concept
         softwareType:
           type: string
@@ -659,6 +662,8 @@ components:
       x-stoplight:
         id: 8c1akpli341fd
       type: object
+      x-tags:
+        - description
       properties:
         id:
           type: string
@@ -678,7 +683,6 @@ components:
             This key contains a longer description of the software, between 150 and 10000 chars. It is meant to provide an overview of the capabilities of the software for a potential user. The audience for this text should be that of users of the software, not developers. You can think of this text as the description of the software that would be in its website (if the software had one).
 
             This description can contain some basic markdown: *italic*, **bold**, bullet points and [links](#).
-          minLength: 150
           maxLength: 10000
         documentation:
           type: string
@@ -741,8 +745,6 @@ components:
             format: url
       required:
         - features
-      x-tags:
-        - description
     Organisation:
       title: Organisation
       x-stoplight:
