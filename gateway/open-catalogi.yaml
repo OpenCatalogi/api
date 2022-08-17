@@ -22,6 +22,17 @@ App\Entity\Gateway:
     overheidUpl:
         name: overheidUpl
         location: https://standaarden.overheid.nl
+    componentencatalogus:
+        name: componentencatalogus
+        location: https://componentencatalogus.commonground.nl/api
+        headers:
+            accept: 'application/json'
+    developerOverheid:
+        name: developerOverheid
+        location: https://developer.overheid.nl/api
+        headers:
+            accept: 'application/json'
+
 
 # Entities
 App\Entity\Entity:
@@ -41,45 +52,45 @@ App\Entity\Entity:
         externMappingIn:
             name: UniformeProductnaam.value
             grondslagLabel: Grondslaglabel.value
-# todo: this doesn't do anything yet:
-#        externMappingOut:
-#          UniformeProductnaam.value: name
-#          Grondslaglabel.value: grondslagLabel
+    # todo: this doesn't do anything yet:
+    #        externMappingOut:
+    #          UniformeProductnaam.value: name
+    #          Grondslaglabel.value: grondslagLabel
 
     # License Entity
     license:
-      name: License
-      description: License GEMMA
-      route: "/license"
-      endpoint: "license"
+        name: License
+        description: License GEMMA
+        route: "/license"
+        endpoint: "license"
 
     # ReferentieComponent Entity
     referentieComponent:
-      name: ReferentieComponent
-      description: ReferentieComponent GEMMA
-      route: "/referentie_components"
-      endpoint: "referentie_components"
+        name: ReferentieComponent
+        description: ReferentieComponent GEMMA
+        route: "/referentie_components"
+        endpoint: "referentie_components"
 
     # Bedrijfsservice Entity
     bedrijfsservice:
-      name: Bedrijfsservice
-      description: Bedrijfsservice GEMMA
-      route: "/bedrijfsservices"
-      endpoint: "bedrijfsservices"
+        name: Bedrijfsservice
+        description: Bedrijfsservice GEMMA
+        route: "/bedrijfsservices"
+        endpoint: "bedrijfsservices"
 
     # Bedrijfsfunctie Entity
     bedrijfsfunctie:
-      name: Bedrijfsfunctie
-      description: Bedrijfsfunctie GEMMA
-      route: "/bedrijfsfuncties"
-      endpoint: "bedrijfsfunctie"
+        name: Bedrijfsfunctie
+        description: Bedrijfsfunctie GEMMA
+        route: "/bedrijfsfuncties"
+        endpoint: "bedrijfsfunctie"
 
     # Applicatiefunctie Entity
     applicatiefunctie:
-      name: Applicatiefunctie
-      description: Applicatiefunctie GEMMA
-      route: "/applicatiefuncties"
-      endpoint: "applicatiefuncties"
+        name: Applicatiefunctie
+        description: Applicatiefunctie GEMMA
+        route: "/applicatiefuncties"
+        endpoint: "applicatiefuncties"
 
 # Attributes
 App\Entity\Attribute:
@@ -295,12 +306,12 @@ App\Entity\Endpoint:
 
     # License Endpoints
     licenseEndpointGet:
-       name: License endpoint get collection
-       description: endpoint for licenses
-       path: [ 'oc', 'v1', 'referentielijsten', 'licenses' ]
-       pathRegex: "^(oc/v1/referentielijsten/licenses)$"
-       method: GET
-       operationType: collection
+        name: License endpoint get collection
+        description: endpoint for licenses
+        path: [ 'oc', 'v1', 'referentielijsten', 'licenses' ]
+        pathRegex: "^(oc/v1/referentielijsten/licenses)$"
+        method: GET
+        operationType: collection
 
     licenseEndpointPost:
         name: License endpoint post
@@ -555,26 +566,62 @@ App\Entity\Handler:
         entity: "@referentieComponent"
 
 App\Entity\Translation:
-   standaloneWebTranslation:
-       translationTable: componentTable
-       translateFrom: standalone/web
-       translateTo: application
-       language: en
-   standaloneMobileTranslation:
-       translationTable: componentTable
-       translateFrom: standalone/mobile
-       translateTo: application
-       language: en
-   dataModelTranslation:
-       translationTable: componentTable
-       translateFrom: schema
-       translateTo: data_model
-       language: en
-   processTranslation:
-       translationTable: componentTable
-       translateFrom: process
-       translateTo: proces
-       language: en
+    standaloneWebTranslation:
+        translationTable: componentTable
+        translateFrom: standalone/web
+        translateTo: application
+        language: en
+    standaloneMobileTranslation:
+        translationTable: componentTable
+        translateFrom: standalone/mobile
+        translateTo: application
+        language: en
+    dataModelTranslation:
+        translationTable: componentTable
+        translateFrom: schema
+        translateTo: data_model
+        language: en
+    processTranslation:
+        translationTable: componentTable
+        translateFrom: process
+        translateTo: proces
+        language: en
+    bruikbaarTranslation:
+        translationTable: componentTable
+        translateFrom: bruikbaar
+        translateTo: stable
+        language: en
+    servicesTranslation:
+        translationTable: componentTable
+        translateFrom: services
+        translateTo: service
+        language: en
+    landelijkeVoorzieningTranslation:
+        translationTable: componentTable
+        translateFrom: zelf installeren
+        translateTo: self
+        language: en
+    gewenstTranslation:
+        translationTable: componentTable
+        translateFrom: gewenst
+        translateTo: concept
+        language: en
+    geplandTranslation:
+        translationTable: componentTable
+        translateFrom: gepland
+        translateTo: development
+        language: en
+    interactieTranslation:
+        translationTable: componentTable
+        translateFrom: interactie
+        translateTo: interface
+        language: en
+    procesTranslation:
+        translationTable: componentTable
+        translateFrom: proces
+        translateTo: process
+        language: en
+
 
 
 ###########################
@@ -689,11 +736,11 @@ App\Entity\Value:
 
     bedrijfsfunctie1_name:
         attribute: "@bedrijfsfunctie_name"
-        stringValue: Algemene content publicatie 
+        stringValue: Algemene content publicatie
         objectEntity: "@bedrijfsfunctie1"
     bedrijfsfunctie1_toelichting:
         attribute: "@bedrijfsfunctie_toelichting"
-        stringValue: Algemene content publicatie 
+        stringValue: Algemene content publicatie
         objectEntity: "@bedrijfsfunctie1"
 
     bedrijfsfunctie2_name:
@@ -708,11 +755,11 @@ App\Entity\Value:
 
     applicatiefunctie1_name:
         attribute: "@applicatiefunctie_name"
-        stringValue: Algemene content publicatie 
+        stringValue: Algemene content publicatie
         objectEntity: "@applicatiefunctie1"
     applicatiefunctie1_toelichting:
         attribute: "@applicatiefunctie_toelichting"
-        stringValue: Algemene content publicatie 
+        stringValue: Algemene content publicatie
         objectEntity: "@applicatiefunctie1"
 
     applicatiefunctie2_name:
@@ -723,3 +770,171 @@ App\Entity\Value:
         attribute: "@applicatiefunctie_toelichting"
         stringValue: Aanbesteding
         objectEntity: "@applicatiefunctie2"
+
+App\Entity\Action:
+    syncAction:
+        name: SyncComponentenCatalogusAction
+        description: This is a synchronization action for the components of the componenten catalogus
+        listens:
+            - 'commongateway.cronjob.trigger'
+        throws: []
+        conditions:
+            '==': [1, 1]
+        class: App\ActionHandler\SynchronizationHandler
+        priority: 0
+        async: false
+        configuration:
+            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
+            source: /admin/gateways/{uuid} # componentencatalogus source
+            location: /components
+            apiSource:
+                locationObjects: '#'
+                locationTotalCount: '#'
+                idField: id
+                dateChangedField: dateModified
+                results: 0
+                queryMethod: page
+                syncFromList: true
+                sourceLeading: true
+                mappingIn:
+                    name: name,
+                    description.nl.localicedName: name
+                    developmentStatus: status
+                    url.url: repositoryUrl
+                    description.shortDescription: description
+                    legal.repoOwner.name: organisationName
+                    legal.repoOwner.email: contact
+                    maintenance.contacts.0.name: organisationName
+                    maintenance.contacts.0.email: contact
+                    maintenance.contacts.0.type: email | value
+                    nl.commonground.layerType: layerType
+                    nl.commonground.installationType: reuseType
+                mappingOut: {}
+                translationsIn:
+                    - componentTable
+                translationsOut: {}
+
+    syncComponentenAction:
+        name: SyncComponentenCatalogusProductsAction
+        description: This is a synchronization action for the products of the componenten catalogus
+        listens:
+            - 'commongateway.cronjob.trigger'
+        throws: [ ]
+        conditions:
+            '==': [ 1, 1 ]
+        class: App\ActionHandler\SynchronizationHandler
+        priority: 0
+        async: false
+        configuration:
+            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
+            source: /admin/gateways/{uuid} # componentencatalogus source
+            location: /products
+            apiSource:
+                locationObjects: '#'
+                locationTotalCount: '#'
+                idField: id
+                dateChangedField: dateModified
+                results: 0
+                queryMethod: page
+                syncFromList: true
+                sourceLeading: true
+                mappingIn:
+                    name: name,
+                    description.nl.localicedName: name
+                    description.nl.shortDescription: shortDescription
+                    description.nl.longDescription: description
+                    logo: detailPageImageUrl
+                    landingUrl: demoUrl
+                    maintenance.contacts.0.name: owner.fullName
+                    maintenance.contacts.0.email: owner.email
+                    legal.repoOwner.name: owner.fullName
+                    legal.repoOwner.email: owner.email
+                    legal.repoOwner.logo: owner.pictureUrl
+                    dependsOn.open: components
+                mappingOut: { }
+                translationsIn: { }
+                translationsOut: { }
+                skeletonIn:
+                    layer: 4
+                    softwareType: standalone/web
+
+    syncDeveloperOverheidAction:
+        name: SyncDeveloperOverheidAction
+        description: This is a synchronization action for the repositories of the developer.overheid.nl
+        listens:
+            - 'commongateway.cronjob.trigger'
+        throws: []
+        conditions:
+            '==': [1, 1]
+        class: App\ActionHandler\SynchronizationHandler
+        priority: 0
+        async: false
+        configuration:
+            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Repositoty entity
+            source: /admin/gateways/{uuid} # developerOverheid source
+            location: /repositories
+            apiSource:
+                locationObjects: 'results'
+                locationTotalCount: 'totalResults'
+                idField: id
+                dateChangedField: 'last_changed'
+                results: 10000
+                queryMethod: page
+                syncFromList: true
+                sourceLeading: true
+                mappingIn: { }
+                mappingOut: { }
+                translationsIn: { }
+                translationsOut: { }
+
+    syncDeveloperOverheidApisAction:
+        name: SyncDeveloperOverheidApisAction
+        description: "This is a synchronization action for the api's of the developer.overheid.nl"
+        listens:
+            - 'commongateway.cronjob.trigger'
+        throws: [ ]
+        conditions:
+            '==': [ 1, 1 ]
+        class: App\ActionHandler\SynchronizationHandler
+        priority: 0
+        async: false
+        configuration:
+            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
+            source: 47f7e2c7-9ad8-40a9-a11e-8bddcd76aa36 # developerOverheid source
+            location: /apis
+            apiSource:
+                locationObjects: 'results'
+                locationTotalCount: 'totalResults'
+                idField: id
+                dateChangedField: 'last_changed'
+                results: 10000
+                queryMethod: page
+                syncFromList: true
+                sourceLeading: true
+                mappingIn:
+                    name: service_name
+                    description.nl.localicedName: service_name
+                    description.nl.shortDescription: description
+                    description.nl.documentation: environments.0.documentation_url
+                    description.nl.apiDocumentation: environments.0.specification_url
+                    maintenance.contacts.0.name: organization_name
+                    maintenance.contacts.0.email: contact.email
+                    maintenance.contacts.0.phone: contact.phone
+                    legal.repoOwner.name: organization_name
+                    legal.repoOwner.email: contact.email
+                    legal.repoOwner.phone: contact.phon
+                mappingOut: { }
+                translationsIn: { }
+                translationsOut: { }
+                skeletonIn:
+                    layer: 2
+                    softwareType: api
+
+App\Entity\Cronjob:
+    sync:
+        name: synchronisations
+        description: a cronjob that sets off the synchronisations for the various sources
+        crontab: '*/1 * * * *'
+        throws:
+            - 'commongateway.cronjob.trigger'
+        data: []
