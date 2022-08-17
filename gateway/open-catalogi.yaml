@@ -33,7 +33,6 @@ App\Entity\Gateway:
         headers:
             accept: 'application/json'
 
-
 # Entities
 App\Entity\Entity:
     # UPL Entity
@@ -566,25 +565,10 @@ App\Entity\Handler:
         entity: "@referentieComponent"
 
 App\Entity\Translation:
-    standaloneWebTranslation:
-        translationTable: componentTable
-        translateFrom: standalone/web
-        translateTo: application
-        language: en
-    standaloneMobileTranslation:
-        translationTable: componentTable
-        translateFrom: standalone/mobile
-        translateTo: application
-        language: en
     dataModelTranslation:
         translationTable: componentTable
         translateFrom: schema
         translateTo: data_model
-        language: en
-    processTranslation:
-        translationTable: componentTable
-        translateFrom: process
-        translateTo: proces
         language: en
     bruikbaarTranslation:
         translationTable: componentTable
@@ -596,7 +580,7 @@ App\Entity\Translation:
         translateFrom: services
         translateTo: service
         language: en
-    landelijkeVoorzieningTranslation:
+    zelfInstallerenTranslation:
         translationTable: componentTable
         translateFrom: zelf installeren
         translateTo: self
@@ -616,13 +600,21 @@ App\Entity\Translation:
         translateFrom: interactie
         translateTo: interface
         language: en
+    landelijkeVoorzieningTranslation:
+        translationTable: componentTable
+        translateFrom: landelijke voorziening
+        translateTo: provision
+        language: en
     procesTranslation:
         translationTable: componentTable
         translateFrom: proces
         translateTo: process
         language: en
-
-
+    integratieTranslation:
+        translationTable: componentTable
+        translateFrom: integratie
+        translateTo: integration
+        language: en
 
 ###########################
 ## ------ Fixtures ------ #
@@ -797,22 +789,24 @@ App\Entity\Action:
                 syncFromList: true
                 sourceLeading: true
                 mappingIn:
-                    name: name,
                     description.nl.localicedName: name
                     developmentStatus: status
                     url.url: repositoryUrl
-                    description.shortDescription: description
-                    legal.repoOwner.name: organisationName
-                    legal.repoOwner.email: contact
-                    maintenance.contacts.0.name: organisationName
-                    maintenance.contacts.0.email: contact
-                    maintenance.contacts.0.type: email | value
+                    description.longDescription: description
+                    legal.repoOwner.name: owner.fullName
+                    legal.repoOwner.email: owner.email
+                    legal.repoOwner.logo: owner.pictureUrl
+                    maintenance.contacts.0.name: owner.fullName
+                    maintenance.contacts.0.email: owner.email
                     nl.commonground.layerType: layerType
                     nl.commonground.installationType: reuseType
                 mappingOut: {}
                 translationsIn:
                     - componentTable
                 translationsOut: {}
+                skeletonIn:
+                    maintenance:
+                        type: internal
 
     syncComponentenAction:
         name: SyncComponentenCatalogusProductsAction
@@ -839,7 +833,6 @@ App\Entity\Action:
                 syncFromList: true
                 sourceLeading: true
                 mappingIn:
-                    name: name,
                     description.nl.localicedName: name
                     description.nl.shortDescription: shortDescription
                     description.nl.longDescription: description
@@ -852,11 +845,16 @@ App\Entity\Action:
                     legal.repoOwner.logo: owner.pictureUrl
                     dependsOn.open: components
                 mappingOut: { }
-                translationsIn: { }
+                translationsIn:
+                    - componentTable
                 translationsOut: { }
                 skeletonIn:
-                    layer: 4
+                    nl:
+                        commonground:
+                            layerType: service
                     softwareType: standalone/web
+                    maintenance:
+                        type: internal
 
     syncDeveloperOverheidAction:
         name: SyncDeveloperOverheidAction
@@ -924,17 +922,22 @@ App\Entity\Action:
                     legal.repoOwner.email: contact.email
                     legal.repoOwner.phone: contact.phon
                 mappingOut: { }
-                translationsIn: { }
+                translationsIn:
+                    - componentTable
                 translationsOut: { }
                 skeletonIn:
-                    layer: 2
+                    nl:
+                        commonground:
+                            layerType: process
                     softwareType: api
+                    maintenance:
+                        type: internal
 
 App\Entity\Cronjob:
-    sync:
-        name: synchronisations
-        description: a cronjob that sets off the synchronisations for the various sources
-        crontab: '*/1 * * * *'
-        throws:
-            - 'commongateway.cronjob.trigger'
-        data: []
+   sync:
+       name: synchronisations
+       description: a cronjob that sets off the synchronisations for the various sources
+       crontab: '*/1 * * * *'
+       throws:
+           - 'commongateway.cronjob.trigger'
+       data: []
