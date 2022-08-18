@@ -933,11 +933,12 @@ App\Entity\Action:
                     maintenance:
                         type: internal
 
-App\Entity\Cronjob:
-   sync:
-       name: synchronisations
-       description: a cronjob that sets off the synchronisations for the various sources
-       crontab: '*/1 * * * *'
-       throws:
-           - 'commongateway.cronjob.trigger'
-       data: []
+#App\Entity\Cronjob:
+#    sync:
+#        name: synchronisations
+#        description: a cronjob that sets off the synchronisations for the various sources
+#        crontab: '*/1 * * * *'
+#        throws:
+#            - 'commongateway.cronjob.trigger'
+#        data: []
+
