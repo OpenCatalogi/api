@@ -1104,10 +1104,10 @@
               "applicatiefunctie": "Aanbieden informatieobjecten als download",
               "referentieComponenten": ["test"]
             },
-            "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
+            "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["regie op gegevens"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1116,7 +1116,7 @@
           "description": {
             "localisedName": "OpenCatalogi",
             "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
-            "longDescription": "This component is based on the following schema.org sources: Address Person",
+            "longDescription": "Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground. Het concept OpenCatalogi biedt overzicht per gekozen (individuele) gemeente en geaggregeerde informatie van deelnemende gemeenten. Elke deelnemende gemeente installeert de OpenCatalogi software ten behoeve van vulling van het individuele deel. Gemeenten gebruiken de publicatiefunctie van het individuele deel om herbruikbare en uitwisselbare onderdelen te publiceren zodat dit inzichtelijk wordt voor andere deelnemers van OpenCatalogi.",
             "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
             "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
             "features": ["API"],
@@ -1130,8 +1130,8 @@
             "unsupportedCountries": ["de"],
             "scope": ["agriculture", "culture"]
           },
-          "isBasedOn": "https://github.com/ConductionNL/adresservice",
-          "landingURL": "https://github.com/ConductionNL/adresservice",
+          "isBasedOn": "https://github.com/OpenCatalogi",
+          "landingURL": "https://github.com/OpenCatalogi",
           "legal": {
             "license": "IJG",
             "mainCopyrightOwner": "Conduction",
@@ -1170,7 +1170,7 @@
           "softwareType": "softwareAddon",
           "softwareVersion": "1.0",
           "installationType": "self",
-          "url": "https://github.com/ConductionNL/adresservice",
+          "url": "https://github.com/OpenCatalogi",
           "usedBy": ["4e10fcc4-f7d3-4f66-87f5-76b5d468f539"],
           "inputTypes": ["string"],
           "outputTypes": ["string"]
