@@ -32,6 +32,13 @@ App\Entity\Gateway:
         location: https://developer.overheid.nl/api
         headers:
             accept: 'application/json'
+    github:
+        name: github
+        location: https://api.github.com
+        headers:
+            Accept:
+                Bearer: 'token'
+            accept: 'application/json'
 
 # Entities
 App\Entity\Entity:
@@ -764,97 +771,95 @@ App\Entity\Value:
         objectEntity: "@applicatiefunctie2"
 
 App\Entity\Action:
-    syncAction:
-        name: SyncComponentenCatalogusAction
-        description: This is a synchronization action for the components of the componenten catalogus
-        listens:
-            - 'commongateway.cronjob.trigger'
-        throws: []
-        conditions:
-            '==': [1, 1]
-        class: App\ActionHandler\SynchronizationHandler
-        priority: 0
-        async: false
-        configuration:
-            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
-            source: /admin/gateways/{uuid} # componentencatalogus source
-            location: /components
-            apiSource:
-                locationObjects: '#'
-                locationTotalCount: '#'
-                idField: id
-                dateChangedField: dateModified
-                results: 0
-                queryMethod: page
-                syncFromList: true
-                sourceLeading: true
-                mappingIn:
-                    description.nl.localicedName: name
-                    developmentStatus: status
-                    url.url: repositoryUrl
-                    description.longDescription: description
-                    legal.repoOwner.name: owner.fullName
-                    legal.repoOwner.email: owner.email
-                    legal.repoOwner.logo: owner.pictureUrl
-                    maintenance.contacts.0.name: owner.fullName
-                    maintenance.contacts.0.email: owner.email
-                    nl.commonground.layerType: layerType
-                    nl.commonground.installationType: reuseType
-                mappingOut: {}
-                translationsIn:
-                    - componentTable
-                translationsOut: {}
-                skeletonIn:
-                    maintenance:
-                        type: internal
+        syncAction:
+            name: SyncComponentenCatalogusAction
+            description: This is a synchronization action for the components of the componenten catalogus
+            listens:
+                - 'commongateway.cronjob.trigger'
+            throws: []
+            conditions:
+                '==': [1, 1]
+            class: App\ActionHandler\SynchronizationCollectionHandler
+            priority: 0
+            async: false
+            configuration:
+                eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
+                source: /admin/gateways/{uuid} # componentencatalogus source
+                location: /components
+                apiSource:
+                    locationObjects: '#'
+                    locationIdField: id
+                    locationDateChangedField: 'dateModified'
+                    results: 0
+                    queryMethod: page
+                    syncFromList: true
+                    sourceLeading: true
+                    mappingIn:
+                        description.nl.localicedName: name
+                        developmentStatus: status
+                        url.url: repositoryUrl
+                        description.longDescription: description
+                        legal.repoOwner.name: owner.fullName
+                        legal.repoOwner.email: owner.email
+                        legal.repoOwner.logo: owner.pictureUrl
+                        maintenance.contacts.0.name: owner.fullName
+                        maintenance.contacts.0.email: owner.email
+                        nl.commonground.layerType: layerType
+                        nl.commonground.installationType: reuseType
+                    mappingOut: {}
+                    translationsIn:
+                        - componentTable
+                    translationsOut: {}
+                    skeletonIn:
+                        maintenance:
+                            type: internal
 
-    syncComponentenAction:
-        name: SyncComponentenCatalogusProductsAction
-        description: This is a synchronization action for the products of the componenten catalogus
-        listens:
-            - 'commongateway.cronjob.trigger'
-        throws: [ ]
-        conditions:
-            '==': [ 1, 1 ]
-        class: App\ActionHandler\SynchronizationHandler
-        priority: 0
-        async: false
-        configuration:
-            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
-            source: /admin/gateways/{uuid} # componentencatalogus source
-            location: /products
-            apiSource:
-                locationObjects: '#'
-                locationTotalCount: '#'
-                idField: id
-                dateChangedField: dateModified
-                results: 0
-                queryMethod: page
-                syncFromList: true
-                sourceLeading: true
-                mappingIn:
-                    description.nl.localicedName: name
-                    description.nl.shortDescription: shortDescription
-                    description.nl.longDescription: description
-                    logo: detailPageImageUrl
-                    landingUrl: demoUrl
-                    maintenance.contacts.0.name: owner.fullName
-                    maintenance.contacts.0.email: owner.email
-                    legal.repoOwner.name: owner.fullName
-                    legal.repoOwner.email: owner.email
-                    legal.repoOwner.logo: owner.pictureUrl
-                    dependsOn.open: components
-                mappingOut: { }
-                translationsIn:
-                    - componentTable
-                translationsOut: { }
-                skeletonIn:
-                    nl:
-                        commonground:
-                            layerType: service
-                    softwareType: standalone/web
-                    maintenance:
-                        type: internal
+        syncComponentenAction:
+            name: SyncComponentenCatalogusProductsAction
+            description: This is a synchronization action for the products of the componenten catalogus
+            listens:
+                - 'commongateway.cronjob.trigger'
+            throws: [ ]
+            conditions:
+                '==': [ 1, 1 ]
+            class: App\ActionHandler\SynchronizationCollectionHandler
+            priority: 0
+            async: false
+            configuration:
+                eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
+                source: /admin/gateways/{uuid} # componentencatalogus source
+                location: /products
+                apiSource:
+                    locationObjects: '#'
+                    locationIdField: id
+                    locationDateChangedField: 'dateModified'
+                    results: 0
+                    queryMethod: page
+                    syncFromList: true
+                    sourceLeading: true
+                    mappingIn:
+                        description.nl.localicedName: name
+                        description.nl.shortDescription: shortDescription
+                        description.nl.longDescription: description
+                        logo: detailPageImageUrl
+                        landingUrl: demoUrl
+                        maintenance.contacts.0.name: owner.fullName
+                        maintenance.contacts.0.email: owner.email
+                        legal.repoOwner.name: owner.fullName
+                        legal.repoOwner.email: owner.email
+                        legal.repoOwner.logo: owner.pictureUrl
+                        dependsOn.open: components
+                    mappingOut: { }
+                    translationsIn:
+                        - componentTable
+                    translationsOut: { }
+                    skeletonIn:
+                        nl:
+                            commonground:
+                                layerType: service
+                        softwareType: standalone/web
+                        maintenance:
+                            type: internal
 
     syncDeveloperOverheidAction:
         name: SyncDeveloperOverheidAction
@@ -864,7 +869,7 @@ App\Entity\Action:
         throws: []
         conditions:
             '==': [1, 1]
-        class: App\ActionHandler\SynchronizationHandler
+        class: App\ActionHandler\SynchronizationCollectionHandler
         priority: 0
         async: false
         configuration:
@@ -873,9 +878,8 @@ App\Entity\Action:
             location: /repositories
             apiSource:
                 locationObjects: 'results'
-                locationTotalCount: 'totalResults'
-                idField: id
-                dateChangedField: 'last_changed'
+                locationIdField: id
+                locationDateChangedField: 'last_changed'
                 results: 10000
                 queryMethod: page
                 syncFromList: true
@@ -893,7 +897,7 @@ App\Entity\Action:
         throws: [ ]
         conditions:
             '==': [ 1, 1 ]
-        class: App\ActionHandler\SynchronizationHandler
+        class: App\ActionHandler\SynchronizationCollectionHandler
         priority: 0
         async: false
         configuration:
@@ -902,9 +906,8 @@ App\Entity\Action:
             location: /apis
             apiSource:
                 locationObjects: 'results'
-                locationTotalCount: 'totalResults'
-                idField: id
-                dateChangedField: 'last_changed'
+                locationIdField: id
+                locationDateChangedField: 'last_changed'
                 results: 10000
                 queryMethod: page
                 syncFromList: true
@@ -932,6 +935,85 @@ App\Entity\Action:
                     softwareType: api
                     maintenance:
                         type: internal
+                        
+    #    syncDeveloperOverheidCronjobOldAction:
+    #        name: SyncDeveloperOverheidGithubOlAction
+    #        description: This is a synchronization action for the repositories of the developer.overheid.nl
+    #        listens:
+    #            - 'commongateway.object.create'
+    #            - 'commongateway.object.update'
+    #        throws: [ ]
+    #        conditions:
+    #            '==': [ 1, 1 ]
+    #        class: App\ActionHandler\GithubSyncHandler
+    #        priority: 1
+    #        async: false
+
+    # set the conditions to th entity repository and the [commongateway.object.create, commongateway.object.create] under listens for a single repository
+    # set the conditions to [1,1] and the commongateway.cronjob.trigger for all repositories
+    PubliccodeFindOrganisationsTroughRepositoriesHandlerAction:
+        name: PubliccodeFindOrganisationsTroughRepositoriesHandlerAction
+        description: This is a publiccode find organisation through repository action
+        listens:
+            - 'commongateway.object.create'
+            - 'commongateway.object.update'
+        throws: [ ]
+        conditions:
+            '==':
+                - var: entity
+                - 97b05576-af9b-43df-bab7-dbf0f057258e # repository entity uuid
+        class: App\ActionHandler\PubliccodeFindOrganisationsTroughRepositoriesHandler
+        priority: 1
+        async: false
+        configuration:
+            repositoryEntityId: uuid
+            organisationEntityId: uuid
+
+#    # set the conditions to th entity repository and the [commongateway.object.create, commongateway.object.create] under listens for a single repository
+#    # set the conditions to [1,1] and the commongateway.cronjob.trigger for all repositories                   
+#    PubliccodeCheckRepositoriesForPublicCodeHandlerAction:
+#        name: PubliccodeCheckRepositoriesForPublicCodeHandlerAction
+#        description: This is a publiccode check repositories for publiccode action
+#        listens:
+#            - 'commongateway.object.create'
+#            - 'commongateway.object.update'
+#        throws: [ ]
+#        conditions:
+#            '==': [ 1, 1 ]
+#        class: App\ActionHandler\PubliccodeCheckRepositoriesForPublicCodeHandler
+#        priority: 1
+#        async: false
+#        configuration:
+#            repositoryEntityId: uuid
+#            componentEntityId: uuid
+            
+#    githubAction:
+#        name: githubAction
+#        description: This is a synchronization action for the publiccode component of the api.github.com
+#        listens:
+#            - 'commongateway.cronjob.trigger'
+#        throws: [ ]
+#        conditions:
+#            '==': [ 1, 1 ]
+#        class: App\ActionHandler\SynchronizationCollectionHandler
+#        priority: 0
+#        async: false
+#        configuration:
+#            eavObject: 97b05576-af9b-43df-bab7-dbf0f057258e # Component entity
+#            source: /admin/gateways/{uuid} # github source
+#            location: /search/code?q=publiccode+in:path+path:/+extension:yaml
+#            apiSource:
+#                locationObjects: 'results'
+#                locationIdField: id
+#                locationDateChangedField: 'last_changed'
+#                results: 10000
+#                queryMethod: page
+#                syncFromList: true
+#                sourceLeading: true
+#                mappingIn: { }
+#                mappingOut: { }
+#                translationsIn: { }
+#                translationsOut: { }
 
 #App\Entity\Cronjob:
 #    sync:
@@ -941,4 +1023,3 @@ App\Entity\Action:
 #        throws:
 #            - 'commongateway.cronjob.trigger'
 #        data: []
-
