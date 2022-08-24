@@ -37,7 +37,7 @@ App\Entity\Gateway:
         location: https://api.github.com
         headers:
             Accept:
-                Bearer: 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
+                Bearer: 'token'
             accept: 'application/json'
 
 # Entities
