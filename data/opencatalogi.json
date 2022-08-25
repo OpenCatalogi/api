@@ -1104,10 +1104,10 @@
               "applicatiefunctie": "Aanbieden informatieobjecten als download",
               "referentieComponenten": ["test"]
             },
-            "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
+            "upl": ["Diplomaregister gegevensverstrekking (Artikel 5 Wet register onderwijsdeelnemers)"],
             "apm": {}
           },
-          "categories": ["regie op gegevens"],
+          "categories": ["control over data"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1115,7 +1115,7 @@
           },
           "description": {
             "localisedName": "OpenCatalogi",
-            "shortDescription": "Dit component verrijkt huisnummer en postcodes bevragingen met BAG gegevens.",
+            "shortDescription": "Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground",
             "longDescription": "Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground. Het concept OpenCatalogi biedt overzicht per gekozen (individuele) gemeente en geaggregeerde informatie van deelnemende gemeenten. Elke deelnemende gemeente installeert de OpenCatalogi software ten behoeve van vulling van het individuele deel. Gemeenten gebruiken de publicatiefunctie van het individuele deel om herbruikbare en uitwisselbare onderdelen te publiceren zodat dit inzichtelijk wordt voor andere deelnemers van OpenCatalogi.",
             "documentation": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md",
             "apiDocumentation": "https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/adresservice/master/api/public/schema/openapi.yaml&nocors",
@@ -1167,7 +1167,7 @@
           "platforms": ["linux", "windows"],
           "releaseDate": "2020-02-18T10:37:28.710861Z",
           "roadmap": "https://vng.nl/agenda",
-          "softwareType": "softwareAddon",
+          "softwareType": "standalone/web",
           "softwareVersion": "1.0",
           "installationType": "self",
           "url": "https://github.com/OpenCatalogi",
