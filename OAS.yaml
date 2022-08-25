@@ -592,6 +592,8 @@ components:
             In case the software does not support any output, you can skip this field or use application/x.empty
           items:
             type: string
+        rating:
+          $ref: '#/components/schemas/Rating'
       required:
         - name
     Contact:
@@ -814,6 +816,22 @@ components:
           website: string
           phone: string
           email: string
+    Rating:
+      title: Rating
+      x-stoplight:
+        id: jx42f4gh3wm7u
+      type: object
+      properties:
+        id:
+          type: string
+        rating:
+          type: integer
+        maxRating:
+          type: integer
+        results:
+          type: array
+          items:
+            type: string
     Repository:
       title: Repository
       x-stoplight:
