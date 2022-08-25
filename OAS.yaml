@@ -825,6 +825,8 @@ components:
           format: uuid
         organisation:
           $ref: '#/components/schemas/Organisation'
+        component:
+          $ref: '#/components/schemas/Component'
         source:
           type: string
           enum:
