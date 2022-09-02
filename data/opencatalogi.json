@@ -117,7 +117,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "proces"
+              "layerType": "process"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -295,7 +295,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "integratie"
+              "layerType": "integration"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -473,7 +473,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "proces"
+              "layerType": "process"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -651,7 +651,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "integratie"
+              "layerType": "integration"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -829,7 +829,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -918,7 +918,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1007,7 +1007,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1096,7 +1096,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1185,7 +1185,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1274,7 +1274,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1363,7 +1363,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "proces"
+              "layerType": "process"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1541,7 +1541,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "integratie"
+              "layerType": "integration"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1719,7 +1719,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "proces"
+              "layerType": "process"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1808,7 +1808,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "proces"
+              "layerType": "process"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -1986,7 +1986,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -2075,7 +2075,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -2164,7 +2164,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
@@ -2253,7 +2253,7 @@
             "commonground": {
               "intendedOrganizations": ["Conduction"],
               "installationType": "helm",
-              "layerType": "interactie"
+              "layerType": "interaction"
             },
             "gemma": {
               "bedrijfsfuncties": ["string"],
