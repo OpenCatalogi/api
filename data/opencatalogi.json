@@ -39,7 +39,7 @@
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["organization authentication"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -128,7 +128,7 @@
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["process design and execution"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -217,7 +217,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["record keeping"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -306,7 +306,7 @@
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["network"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -395,7 +395,7 @@
             "upl": ["Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["history and metadata"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -484,7 +484,7 @@
             "upl": ["Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["business rules"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -573,7 +573,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["organization authentication"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -662,7 +662,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["network security"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -751,7 +751,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["protocolling"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -840,7 +840,7 @@
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["control over data"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -929,7 +929,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["request and notifications"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1018,7 +1018,7 @@
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)" ],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["end user authentication"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1196,7 +1196,7 @@
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)" ],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["process support"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1285,7 +1285,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["request and notifications"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1374,7 +1374,7 @@
             "upl": ["Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["business rules"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1463,7 +1463,7 @@
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["record keeping"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1552,7 +1552,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["end user authentication"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1641,7 +1641,7 @@
             "upl": ["Gasaansluitingsverzoek (Artikel 44 Gaswet)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)" ],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["callback"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1730,7 +1730,7 @@
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)" ],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["data analysis support"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1819,7 +1819,7 @@
             "upl": ["Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["function authorization"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1908,7 +1908,7 @@
             "upl": ["Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)", "Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Wapenvergunning (Artikel 28 Wet wapens en munitie)", "Gasaansluitingsverzoek (Artikel 44 Gaswet)", "Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["transformation"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -1997,7 +1997,7 @@
             "upl": ["Terugkeervisum (Artikel 2w Vreemdelingenwet 2000)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)" ],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["process support"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -2086,7 +2086,7 @@
             "upl": ["Gasaansluitingsverzoek (Artikel 44 Gaswet)", "Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Zorgverzekeringsplicht (Artikel 2 Zorgverzekeringswet)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["control over data"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -2175,7 +2175,7 @@
             "upl": ["Wapenvergunning (Artikel 28 Wet wapens en munitie)"],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["request and notifications"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
@@ -2264,7 +2264,7 @@
             "upl": ["Aangifte vertrek buitenland (Artikel 2.43 Wet basisregistratie personen)", "Examenvak vo ontheffing (Artikel 24 Eindexamenbesluit VO)" ],
             "apm": {}
           },
-          "categories": ["Acounting"],
+          "categories": ["end user authentication"],
           "dependsOn": {
             "open": [{}],
             "proprietary": [{}],
