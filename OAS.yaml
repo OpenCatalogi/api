@@ -750,6 +750,23 @@ components:
         id: n9bmvlkld52vx
       type: object
       description: '[extension of the publiccode standard] [extension of  the klanten API organisatie object] '
+      examples:
+        - id: string
+          name: string
+          description: string
+          logo: 'http://example.com'
+          supports:
+            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
+          owns:
+            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
+          uses:
+            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
+          token: string
+          github: string
+          gitlab: string
+          website: string
+          phone: string
+          email: string
       properties:
         id:
           type: string
@@ -799,23 +816,14 @@ components:
           type: string
         email:
           type: string
-      examples:
-        - id: string
-          name: string
-          description: string
-          logo: 'http://example.com'
-          supports:
-            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
-          owns:
-            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
-          uses:
-            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
-          token: string
-          github: string
-          gitlab: string
-          website: string
-          phone: string
-          email: string
+        type:
+          type: string
+          enum:
+            - public
+            - private
+            - unkown
+          example: public
+          description: The type of this organisation
     Rating:
       title: Rating
       x-stoplight:
@@ -872,3 +880,7 @@ components:
         topics:
           type: array
           items: {}
+        content:
+          type: string
+        publiccode_url:
+          type: string
