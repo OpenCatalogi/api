@@ -824,6 +824,11 @@ components:
             - unkown
           example: public
           description: The type of this organisation
+        catalogusAPI:
+          type:
+            - string
+            - 'null'
+          format: uri
     Rating:
       title: Rating
       x-stoplight:
@@ -883,4 +888,6 @@ components:
         content:
           type: string
         publiccode_url:
+          type: string
+        default_owner:
           type: string
