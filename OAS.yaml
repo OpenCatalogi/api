@@ -198,6 +198,15 @@ components:
           type: string
         isPublished:
           type: string
+        owner:
+          type: object
+          properties:
+            fullName:
+              type: string
+            email:
+              type: string
+            pictureUrl:
+              type: string
         components:
           type: array
           items: {}
