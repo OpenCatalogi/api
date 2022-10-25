@@ -209,7 +209,8 @@ components:
               type: string
         components:
           type: array
-          items: {}
+          items:
+            $ref: '#/components/schemas/ComponentUrl'
       required:
         - name
     Component:
@@ -622,6 +623,14 @@ components:
           $ref: '#/components/schemas/Rating'
       required:
         - name
+    ComponentUrl:
+      title: ComponentUrl
+      x-stoplight:
+        id: yw083kveb0cc0
+      type: object
+      properties:
+        repositoryUrl:
+          type: string
     Contact:
       title: Contact
       x-stoplight:
