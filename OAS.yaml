@@ -177,15 +177,32 @@ components:
         id: rxtjerlhpkxnm
       type: object
       description: ''
+      x-tags:
+        - application
       properties:
         id:
           type: string
         name:
           type: string
+        shortDescription:
+          type: string
+        description:
+          type: string
+        detailPageImageUrl:
+          type: string
+        documentationUrl:
+          type: string
+        demoUrl:
+          type: string
+        bpmnProcessUrl:
+          type: string
+        isPublished:
+          type: string
+        components:
+          type: array
+          items: {}
       required:
         - name
-      x-tags:
-        - application
     Component:
       title: Component
       x-stoplight:
