@@ -283,11 +283,16 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Catalogi'
+                $ref: '#/components/schemas/Application'
       operationId: get-catalogi-id
-    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Catalogi'
+    put:
       summary: ''
-      operationId: post-catalogi-id
+      operationId: put-catalogi-id
       responses:
         '200':
           description: OK
@@ -300,6 +305,12 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Catalogi'
+    delete:
+      summary: ''
+      operationId: delete-catalogi-id
+      responses:
+        '200':
+          description: OK
 components:
   schemas:
     Application:
