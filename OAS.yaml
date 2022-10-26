@@ -240,6 +240,66 @@ paths:
       responses:
         '200':
           description: OK
+  /catalogi:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Catalogi'
+      operationId: get-catalogi
+    post:
+      summary: ''
+      operationId: post-catalogi
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Catalogi'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Catalogi'
+  '/catalogi/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Catalogi'
+      operationId: get-catalogi-id
+    post:
+      summary: ''
+      operationId: post-catalogi-id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Catalogi'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Catalogi'
 components:
   schemas:
     Application:
@@ -284,6 +344,27 @@ components:
             $ref: '#/components/schemas/ComponentUrl'
       required:
         - name
+    Catalogi:
+      title: Catalogi
+      x-stoplight:
+        id: lvyd1ecf535j4
+      type: object
+      properties:
+        source:
+          type: object
+          properties:
+            name:
+              type: string
+            description:
+              type: string
+            location:
+              type: string
+        organisation:
+          $ref: '#/components/schemas/Organisation'
+        rsin:
+          type: string
+        pki:
+          type: string
     Component:
       title: Component
       x-stoplight:
