@@ -1,7 +1,8 @@
 
 ---
-
-publiccodeYmlVersion: "0.1"
+publiccodeYmlVersion: 1.0
+developmentStatus: 'stable'
+releaseDate: '31/10/2022'
 
 name: "OpenCatalogi API"
 url: "https://github.com/OpenCatalogi/api"
@@ -46,17 +47,20 @@ intendedAudience:
  
 description:
   nl:
+    localisedName: "OpenCatalogi applicatie"
     shortDescription: "Een API om open source projecten te delen."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml&nocors'
     apiDocumentation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml'
     testDataLocation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json'
     longDescription: "Een API om open source projecten te delen."
   en:
+    localisedName: "OpenCatalogi application"
     shortDescription: "An API to share open source projects."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml&nocors'
     apiDocumentation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml'
     testDataLocation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json'
     longDescription: "An API to share open source projects."
+    
 dependsOn:
   open:
     - name: "common-gateway"
