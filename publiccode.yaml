@@ -64,5 +64,4 @@ description:
 dependsOn:
   open:
     - name: "common-gateway"
-  hardware: 
     - "versionMin: 1.0.0"
