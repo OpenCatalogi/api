@@ -311,6 +311,76 @@ paths:
       responses:
         '200':
           description: OK
+  /repositories:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Repository'
+      operationId: get-repositories
+    post:
+      summary: ''
+      operationId: post-repositories
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Repository'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Repository'
+  '/repositories/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Repository'
+      operationId: get-repositories-id
+    put:
+      summary: ''
+      operationId: put-repositories-id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Repository'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Repository'
+    delete:
+      summary: ''
+      operationId: delete-repositories-id
+      responses:
+        '200':
+          description: OK
 components:
   schemas:
     Application:
