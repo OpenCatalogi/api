@@ -1,48 +1,67 @@
-publiccodeYmlVersion: "0.1"
 
-name: "Public Code Open Catalogi"
-url: "https://yml.publiccode.tools/schema.core.html"
+---
+publiccodeYmlVersion: 1.0
+developmentStatus: 'stable'
+releaseDate: '31/10/2022'
+
+name: "OpenCatalogi API"
+url: "https://github.com/OpenCatalogi/api"
 releaseDate: "2022-04-08"
 
-softwareType: configurationFiles
+softwareType: "configurationFiles"
 
 inputTypes:
-  - application/json
-  - application/xml
+  - "application/json"
+  - "application/xml"
 
 outputTypes:
-  - application/json
-  - application/ld+json
-  - application/hal+json
-  - application/vnd.api+json
-  - application/health+json
-  - application/xml
-  - application/x-yaml
-  - text/csv
-  - text/html
+  - "application/json"
+  - "application/ld+json"
+  - "application/hal+json"
+  - "application/vnd.api+json"
+  - "application/health+json"
+  - "application/xml"
+  - "application/x-yaml"
+  - "text/csv"
+  - "text/html"
 
 platforms:
-  - web
+  - "web"
   
 categories:
-  - collaboration
-  - it-development
-  
-developmentStatus: beta
+  - "collaboration"
+  - "it-development"
+  - "application-development"
 
+developmentStatus: "beta"
+
+roadmap: "https://github.com/orgs/OpenCatalogi/projects/1"
+
+nl: 
+  commonground: 
+    layerType: "process"
+
+intendedAudience: 
+  scope: 
+    - "government"
+ 
 description:
   nl:
+    localisedName: "OpenCatalogi applicatie"
     shortDescription: "Een API om open source projecten te delen."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml&nocors'
     apiDocumentation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml'
     testDataLocation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json'
+    longDescription: "Een API om open source projecten te delen."
   en:
-    shortDescription: "An API to share open source projects"
+    localisedName: "OpenCatalogi application"
+    shortDescription: "An API to share open source projects."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml&nocors'
     apiDocumentation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.yaml'
     testDataLocation: 'https://raw.githubusercontent.com/OpenCatalogi/api/master/data/opencatalogi.json'
-
+    longDescription: "An API to share open source projects."
+    
 dependsOn:
   open:
-    - name: common-gateway
-      versionMin: 1.0.0
+    - name: "common-gateway"
+    - "versionMin: 1.0.0"
